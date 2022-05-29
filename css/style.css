@@ -153,7 +153,18 @@ ul{
     font-size: 1.2rem;
     margin-left: .2rem;
 }
-
+.sidebar-menu{
+    width: 100%;
+    padding: 1.5rem;
+}
+.sidebar-menu ul li{
+    margin-bottom: 1rem;
+}
+.sidebar-menu ul li a{
+    font-size: 1.6rem;
+    color: #AA99AA;
+    font-weight: 400;
+}
 #main-content{
     width: 81%;
     padding: 1rem;
