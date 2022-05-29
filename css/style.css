@@ -7,21 +7,116 @@ img{
     max-width: 100%;
     height: auto;
 }
+html{
+    font-size: 62.5%;
+}
 body{
     font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
 }
 .container{
-    max-width: 1300px;
+    max-width: 1340px;
     width: 100%;
     margin: auto;
 }
 .row{
     display: flex;
-    margin: 15px;
+    justify-content: space-between;
+    align-items: center;
 }
 a,a:hover{
     text-decoration: none;
 }
 ul{
     list-style-type: none;
+}
+
+/*
+-----------------------------------------------------
+---------- HEADER SECTION STYLE ---------------
+-----------------------------------------------------
+*/
+#header-section{
+    width: 100%;
+    background: #350D36;
+    padding: .5rem 0;
+}
+.history{
+    width: 15%;
+    text-align: end;
+}
+.history img{
+    font-size: 1rem;
+    color: #E4DFE4;
+    height: 100%;
+    padding:.4rem;
+    border-radius: .3rem;
+}
+.history img:hover{
+    background: #644565;
+    color: #E4DFE4;
+    cursor: pointer;
+}
+.search-box{
+    width:58%;
+    margin-left: 1%;
+}
+.input-box{
+    width:100%;
+    position: relative;
+}
+.input-box input{
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #EFEBEF;
+    background: #644565;
+    padding:.7rem;
+    border-radius: .3rem;
+}
+.input-box input::placeholder{
+    color: #EFEBEF;
+}
+.search-iconbar {
+    display: flex;
+    position: absolute;
+    right: 1%;
+    top: 18%;
+}
+.search-iconbar span{
+    font-size: 1.4rem;
+    margin-left: .5rem;
+}
+.search-iconbar span.search{
+    color: #AA99AA;
+}
+.search-iconbar span.filter-icon{
+    color: #dadada;
+}
+.user-account{
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.user-account .help-icon{
+    font-size: 1.4rem;
+    color: #E4DFE4;
+    height: 100%;
+    padding:.4rem;
+    border-radius: .3rem;
+}
+.user-account .help-icon:hover{
+    background: #644565;
+    color: #E4DFE4;
+    cursor: pointer;
+}
+.user-photo{
+    margin-left:1.5rem;
+}
+.user-photo img{
+    width:2.6rem;
+    height:2.6rem;
+    object-fit: cover;
+    border-radius: .3rem;
 }
