@@ -134,9 +134,26 @@ ul{
     width: 19%;
     height: 100vh;
     overflow:auto;
-    padding: .3rem 1rem;
     background: #3F0E40;
 }
+.sidebar-title{
+    width: 100%;
+    padding: 1.5rem;
+    background-color: initial;
+    cursor: pointer;
+    border-top: 1px solid rgb(82,38,83);
+    border-bottom: 1px solid rgb(82,38,83);
+}
+.sidebar-title h3{
+    font-size: 1.8rem;
+    color:#FFFFFF;
+    font-weight: 600;
+}
+.sidebar-title h3 i{
+    font-size: 1.2rem;
+    margin-left: .2rem;
+}
+
 #main-content{
     width: 81%;
     padding: 1rem;
