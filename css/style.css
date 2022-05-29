@@ -13,6 +13,7 @@ html{
 body{
     font-family: 'Lato', sans-serif;
     font-size: 1.6rem;
+    overflow: hidden;
 }
 .container{
     max-width: 1340px;
@@ -39,10 +40,10 @@ ul{
 #header-section{
     width: 100%;
     background: #350D36;
-    padding: .5rem 0;
+    padding: .6rem 0;
 }
 .history{
-    width: 15%;
+    width: 17%;
     text-align: end;
 }
 .history img{
@@ -58,7 +59,7 @@ ul{
     cursor: pointer;
 }
 .search-box{
-    width:58%;
+    width:56%;
     margin-left: 1%;
 }
 .input-box{
@@ -112,11 +113,32 @@ ul{
     cursor: pointer;
 }
 .user-photo{
-    margin-left:1.5rem;
+    margin-left:1.2rem;
 }
 .user-photo img{
     width:2.6rem;
     height:2.6rem;
     object-fit: cover;
     border-radius: .3rem;
+}
+
+/*
+-----------------------------------------------------
+---------- SIDEBAR SECTION STYLE ---------------
+-----------------------------------------------------
+*/
+#main-content-wrapper .row{
+    align-items: flex-start;
+}
+#sidebar-section{
+    width: 19%;
+    height: 100vh;
+    overflow:auto;
+    padding: .3rem 1rem;
+    background: #3F0E40;
+}
+#main-content{
+    width: 81%;
+    padding: 1rem;
+    overflow: auto;
 }
