@@ -155,15 +155,39 @@ ul{
 }
 .sidebar-menu{
     width: 100%;
-    padding: 1.5rem;
 }
+
 .sidebar-menu ul li{
-    margin-bottom: 1rem;
+    display: block;
 }
 .sidebar-menu ul li a{
+    display: block;
     font-size: 1.6rem;
-    color: #AA99AA;
+    color: #c2b1c2;
     font-weight: 400;
+    padding: .6rem 1.5rem;
+}
+.sidebar-menu ul li a:hover{
+    background: #350D36;
+}
+.sidebar-menu ul li a span{
+    font-size: 1.4rem;
+    margin-right: .5rem;
+}
+.sidebar-menu ul li.more,
+.sidebar-menu ul li.channel,
+.sidebar-menu ul li.direct-msg{
+    margin-bottom: 1rem;
+    margin-left: .3rem;
+}
+.sidebar-menu ul li.more a:hover{
+    background: transparent;
+}
+.sidebar-menu ul li.channel a:hover{
+    background: transparent;
+}
+.sidebar-menu ul li.direct-msg a:hover{
+    background: transparent;
 }
 #main-content{
     width: 81%;
