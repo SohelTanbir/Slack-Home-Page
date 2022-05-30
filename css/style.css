@@ -238,6 +238,9 @@ ul.sidebar-top-item li.channel a:hover{
 ul.sidebar-top-item li.direct-msg a:hover{
     background: transparent;
 }
+ul.sidebar-top-item li.app a:hover{
+    background: transparent;
+}
 /* sidebar sub item menu */
 .sidebar-sub-menu{
     width: 100%;
@@ -294,7 +297,7 @@ ul.sidebar-top-item li.direct-msg a:hover{
 }
 .extra-options span {
     color: #b1a3b1;
-    padding: .5rem .6rem;
+    padding: .4rem .6rem;
     border-radius:.3rem;
     visibility: hidden;
 }
@@ -302,7 +305,7 @@ ul.sidebar-top-item li.direct-msg a:hover{
     background: #532753;
 }
 .extra-options span:first-child{
-    padding: .5rem 1.2rem;
+    padding: .4rem 1.1rem;
 }
 #main-content{
     width: 81%;
