@@ -167,7 +167,7 @@ ul{
     font-size: 1.8rem;
     color: #FFFFFF;
     font-weight: 600;
-    text-shadow: 0.1rem 0.1rem 0.1rem #e2d5d5;
+    text-shadow: .1rem .1rem 0 #e2d5d5;
 }
 .sidebar-title h3 i{
     font-size: 1.2rem;
@@ -239,25 +239,37 @@ ul.sidebar-top-item li.direct-msg a:hover{
     width: 100%;
     display: none;
 }
-.sidebar-sub-menu li a{
+.sidebar-sub-menu ul li a{
     padding-left: 3rem!important;
 }
-.sidebar-sub-menu li:last-child a{
+.sidebar-sub-menu ul li:last-child a{
         color: #b1a3b1!important;
 }
-.sidebar-sub-menu li:last-child a span{
+.sidebar-sub-menu ul li:last-child a span{
     background: #4A264A;
     padding: .4rem .6rem;
     border-radius: .3rem;
 }
-.sidebar-sub-menu li a.personal{
+.sidebar-sub-menu ul li a.personal{
     color: #817881;
 }
-.sidebar-sub-menu li a span{
+.sidebar-sub-menu ul li a span{
     font-size: 1rem!important;
 }
-.sidebar-sub-menu li a:hover{
+.sidebar-sub-menu ul li a:hover{
     background: #350D36!important;
+}
+.sidebar-sub-menu ul li .user-photo{
+    margin-left: initial;
+    margin-right: .5rem;
+}
+.sidebar-sub-menu ul li .user-photo img{
+    width: 2.2rem;
+    height: 2.2rem;
+    margin-right: initial;
+}
+.sidebar-sub-menu ul li span.user-name{
+    margin-left: .5rem;
 }
 #main-content{
     width: 81%;
