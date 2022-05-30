@@ -326,3 +326,14 @@ ul.sidebar-top-item li.app a:hover{
 #main-content-wrapper .row{
     align-items: flex-start;
 }
+
+
+/* customize scrollbar */
+.sidebar-menu::-webkit-scrollbar{
+    width: .8rem;
+    background-color: transparent;
+}
+.sidebar-menu::-webkit-scrollbar-thumb{
+    background-color:#967B96;
+    border-radius: 1rem;
+}
