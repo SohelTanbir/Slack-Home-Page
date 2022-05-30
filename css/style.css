@@ -307,6 +307,12 @@ ul.sidebar-top-item li.app a:hover{
 .extra-options span:first-child{
     padding: .4rem 1.1rem;
 }
+.sort-icon {
+    display: flex;
+}
+.sort-icon img:last-child{
+    display: none;
+}
 #main-content{
     width: 81%;
     padding: 1rem;
