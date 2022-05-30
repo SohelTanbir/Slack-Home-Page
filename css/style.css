@@ -186,6 +186,7 @@ ul{
 }
 .sidebar-menu{
     width: 100%;
+    padding-bottom: 5rem;
 }
 ul.sidebar-top-item li{
     position: relative;
@@ -203,6 +204,9 @@ ul.sidebar-top-item li a{
 ul.sidebar-top-item li a:hover{
     background: #350D36;
 }
+ul.sidebar-top-item li a:hover .extra-options span{
+    visibility: visible;
+ }
 ul.sidebar-top-item li:last-child a{
     color: #817881;;
 }
@@ -253,11 +257,14 @@ ul.sidebar-top-item li.direct-msg a:hover{
 .sidebar-sub-menu ul li a.personal{
     color: #817881;
 }
-.sidebar-sub-menu ul li a span{
+.sidebar-sub-menu ul li a span i{
     font-size: 1rem!important;
 }
 .sidebar-sub-menu ul li a:hover{
     background: #350D36!important;
+}
+.sidebar-sub-menu ul li a:hover .extra-options{
+   visibility: visible;
 }
 .sidebar-sub-menu ul li .user-photo{
     margin-left: initial;
@@ -270,6 +277,32 @@ ul.sidebar-top-item li.direct-msg a:hover{
 }
 .sidebar-sub-menu ul li span.user-name{
     margin-left: .5rem;
+}
+.sidebar-sub-menu ul li .user-photo .user-status{
+    width: 1.3rem;
+    height: 1.3rem;
+}
+.self-user{
+    font-size: 1.6rem!important;
+    margin-left: 1rem;
+    color: #817881;
+}
+.extra-options{
+    width: 100%;
+    position: absolute;
+    left: 70%;
+}
+.extra-options span {
+    color: #b1a3b1;
+    padding: .5rem .6rem;
+    border-radius:.3rem;
+    visibility: hidden;
+}
+.extra-options span:hover{
+    background: #532753;
+}
+.extra-options span:first-child{
+    padding: .5rem 1.2rem;
 }
 #main-content{
     width: 81%;
