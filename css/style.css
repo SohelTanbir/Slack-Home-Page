@@ -137,6 +137,9 @@ ul{
     background: #3F0E40;
 }
 .sidebar-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     padding: 1.5rem;
     background-color: initial;
@@ -152,6 +155,17 @@ ul{
 .sidebar-title h3 i{
     font-size: 1.2rem;
     margin-left: .2rem;
+}
+.sidebar-title .new-message{
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height: 3.3rem;
+    text-align: center;
+    border-radius:50%;
+    background: #FFFFFF;
+}
+.sidebar-title .new-message sapn{
+    
 }
 .sidebar-menu{
     width: 100%;
@@ -183,6 +197,8 @@ ul{
 .sidebar-menu ul li.more a:hover{
     background: transparent;
 }
+
+
 .sidebar-menu ul li.channel a:hover{
     background: transparent;
 }
