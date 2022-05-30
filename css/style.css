@@ -10,6 +10,11 @@ img{
 html{
     font-size: 62.5%;
 }
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
 body{
     font-family: 'Lato', sans-serif;
     font-size: 1.6rem;
@@ -143,31 +148,28 @@ ul{
 ---------- SIDEBAR SECTION STYLE ---------------
 -----------------------------------------------------
 */
-#main-content-wrapper .row{
-    align-items: flex-start;
-}
 #sidebar-section{
+    position: relative;
     width: 19%;
-    height: 100vh;
-    overflow:auto;
-    background: #3F0E40;
 }
 .sidebar-title{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    padding: 1.5rem;
+    width:100%; 
+    background: #3F0E40!important;
+    padding: 1rem;
     background-color: initial;
     cursor: pointer;
     border-top: 1px solid rgb(82,38,83);
     border-bottom: 1px solid rgb(82,38,83);
+    z-index: 99999;
 }
 .sidebar-title h3 {
     font-size: 1.8rem;
     color: #FFFFFF;
     font-weight: 600;
-    text-shadow: .1rem .1rem 0 #e2d5d5;
+    text-shadow: .1rem 0rem 0 #e2d5d5;
 }
 .sidebar-title h3 i{
     font-size: 1.2rem;
@@ -185,8 +187,11 @@ ul{
     font-size: 1.4rem;
 }
 .sidebar-menu{
-    width: 100%;
+    height: 100vh;
     padding-bottom: 5rem;
+    background: #3F0E40;
+    overflow: auto;
+    padding: .8rem 0 5rem;
 }
 ul.sidebar-top-item li{
     position: relative;
@@ -317,4 +322,7 @@ ul.sidebar-top-item li.app a:hover{
     width: 81%;
     padding: 1rem;
     overflow: auto;
+}
+#main-content-wrapper .row{
+    align-items: flex-start;
 }
