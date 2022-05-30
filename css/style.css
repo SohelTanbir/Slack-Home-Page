@@ -16,7 +16,7 @@ body{
     overflow: hidden;
 }
 .container{
-    max-width: 1340px;
+    max-width: 1330px;
     width: 100%;
     margin: auto;
 }
@@ -113,7 +113,9 @@ ul{
     cursor: pointer;
 }
 .user-photo{
+    position: relative;
     margin-left:1.2rem;
+    cursor: pointer;
 }
 .user-photo img{
     width:2.6rem;
@@ -121,7 +123,16 @@ ul{
     object-fit: cover;
     border-radius: .3rem;
 }
-
+.user-photo .user-status{
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    right: -20%;
+    bottom: -1px;
+    border: .3rem solid #350D36;
+    border-radius: 50%;
+    background: #2BAC76;
+}
 /*
 -----------------------------------------------------
 ---------- SIDEBAR SECTION STYLE ---------------
@@ -165,7 +176,7 @@ ul{
     background: #FFFFFF;
 }
 .sidebar-title .new-message sapn{
-    
+    font-size: 1.4rem;
 }
 .sidebar-menu{
     width: 100%;
