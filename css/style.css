@@ -31,7 +31,12 @@ a,a:hover{
 ul{
     list-style-type: none;
 }
-
+.hide{
+    display: none!important;
+}
+.show{
+    display: block!important;
+}
 /*
 -----------------------------------------------------
 ---------- HEADER SECTION STYLE ---------------
@@ -162,7 +167,7 @@ ul{
     font-size: 1.8rem;
     color: #FFFFFF;
     font-weight: 600;
-    text-shadow: 0.1rem 0.1rem 0.2rem #9d8787;
+    text-shadow: 0.1rem 0.1rem 0.1rem #e2d5d5;
 }
 .sidebar-title h3 i{
     font-size: 1.2rem;
@@ -182,40 +187,77 @@ ul{
 .sidebar-menu{
     width: 100%;
 }
-
-.sidebar-menu ul li{
-    display: block;
+ul.sidebar-top-item li{
+    position: relative;
 }
-.sidebar-menu ul li a{
-    display: block;
+ul.sidebar-top-item li a{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     font-size: 1.6rem;
-    color: #c2b1c2;
+    color: #b1a3b1;
     font-weight: 400;
-    padding: .6rem 1.5rem;
+    margin-top: .4rem;
+    padding: .4rem 1.5rem;
 }
-.sidebar-menu ul li a:hover{
+ul.sidebar-top-item li a:hover{
     background: #350D36;
 }
-.sidebar-menu ul li a span{
+ul.sidebar-top-item li:last-child a{
+    color: #817881;;
+}
+.sidebar-top-item li a img{
+    /* width:1.6rem;
+    height: 1.5rem; */
+    margin-right: .9rem;
+}
+ul.sidebar-top-item li a span{
     font-size: 1.4rem;
-    margin-right: .5rem;
+    margin-right: .9rem;
 }
-.sidebar-menu ul li.more,
-.sidebar-menu ul li.channel,
-.sidebar-menu ul li.direct-msg{
+ul.sidebar-top-item li.more{
     margin-bottom: 1rem;
-    margin-left: .3rem;
+    margin-left: .8rem;
 }
-.sidebar-menu ul li.more a:hover{
+ul.sidebar-top-item li.channel,
+ul.sidebar-top-item li.direct-msg{
+    margin-bottom: .1rem;
+}
+ul.sidebar-top-item li.more a:hover{
+    color: #FFFFFF;
     background: transparent;
 }
 
-
-.sidebar-menu ul li.channel a:hover{
+ul.sidebar-top-item li.channel a:hover{
     background: transparent;
 }
-.sidebar-menu ul li.direct-msg a:hover{
+ul.sidebar-top-item li.direct-msg a:hover{
     background: transparent;
+}
+/* sidebar sub item menu */
+.sidebar-sub-menu{
+    width: 100%;
+    display: none;
+}
+.sidebar-sub-menu li a{
+    padding-left: 3rem!important;
+}
+.sidebar-sub-menu li:last-child a{
+        color: #b1a3b1!important;
+}
+.sidebar-sub-menu li:last-child a span{
+    background: #4A264A;
+    padding: .4rem .6rem;
+    border-radius: .3rem;
+}
+.sidebar-sub-menu li a.personal{
+    color: #817881;
+}
+.sidebar-sub-menu li a span{
+    font-size: 1rem!important;
+}
+.sidebar-sub-menu li a:hover{
+    background: #350D36!important;
 }
 #main-content{
     width: 81%;
