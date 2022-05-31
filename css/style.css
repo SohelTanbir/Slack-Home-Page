@@ -296,7 +296,6 @@ ul.sidebar-top-item li.app a:hover{
     color: #817881;
 }
 .extra-options{
-    width: 100%;
     position: absolute;
     left: 70%;
 }
@@ -311,6 +310,17 @@ ul.sidebar-top-item li.app a:hover{
 }
 .extra-options span:first-child{
     padding: .4rem 1.1rem;
+}
+/*for sub list item on direct msg*/
+.sidebar-sub-menu .extra-options{
+    left: 85%;
+}
+.sidebar-sub-menu .extra-options span i{
+    font-size: 1.8rem!important;
+    color: #BCABBC;
+}
+.sidebar-sub-menu .extra-options span:hover{
+    background: transparent;
 }
 .sort-icon {
     display: flex;
@@ -327,8 +337,11 @@ ul.sidebar-top-item li.app a:hover{
     align-items: flex-start;
 }
 
-
-/* customize scrollbar */
+/*
+-----------------------------------------------------
+---------- customize scrollbar style ---------------
+-----------------------------------------------------
+*/
 .sidebar-menu::-webkit-scrollbar{
     width: .8rem;
     background-color: transparent;
@@ -336,4 +349,22 @@ ul.sidebar-top-item li.app a:hover{
 .sidebar-menu::-webkit-scrollbar-thumb{
     background-color:#967B96;
     border-radius: 1rem;
+}
+
+/*
+-----------------------------------------------------
+---------- MAIN CONTENT STYLE ---------------
+-----------------------------------------------------
+*/
+.unread-message{
+    position: absolute;
+    top: 55%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    text-align: center  ;
+}
+.unread-message h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1D1C1D;
 }
