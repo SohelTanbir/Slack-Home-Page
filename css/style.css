@@ -251,6 +251,9 @@ ul.sidebar-top-item li.app a:hover{
     width: 100%;
     display: none;
 }
+.sidebar-sub-menu ul li{
+    margin-bottom: .5rem!important;
+}
 .sidebar-sub-menu ul li a{
     padding-left: 3rem!important;
 }
@@ -367,4 +370,9 @@ ul.sidebar-top-item li.app a:hover{
     font-size: 2.5rem;
     font-weight: 700;
     color: #1D1C1D;
+}
+
+
+.child-1{
+    display: none;
 }
