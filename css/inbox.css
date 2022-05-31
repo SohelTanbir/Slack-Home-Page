@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:1.4rem;
+    padding:1rem 1.4rem;
     border-bottom: .1rem solid #dddddd;
 }
 .inbox-header .user-photo{
@@ -38,7 +38,7 @@
   cursor: pointer;
 }
 .inbox-message{
-    height: 70vh;
+    height: 66vh;
     padding:1rem 1.4rem;
     overflow: auto;
 }
@@ -46,8 +46,10 @@
     width:98%;
     margin: auto;
     padding: 1rem;
+    border-radius: 1rem;
     border: .1rem solid #dddddd;
-    box-shadow: 0 0 .1rem #dddddd;
+    box-shadow: 0 0 .1rem#f3f3f3;
+
 }
 .inbox-footer .message-box{
     width: 100%;
@@ -55,14 +57,51 @@
 
 .inbox-footer .message-box textarea{
     width: 100%;
+    height: auto;
     border: none;
     outline: none;
-    padding: 1rem;
     resize: none;
+    font-size: 1.6rem;
+    color: #4b4b4b;
 }
+.inbox-footer .message-box textarea::placeholder{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    color: #a8a8a8;
+}
+.inbox-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-tools ul{
+    display: flex;
+}
+.left-tools ul li{
+    margin-right:.5rem;
+    padding-right:.5rem;
 
-
-
+}
+.left-tools ul li:nth-child(1){
+    border-right: .1rem solid #e2e2e2;
+}
+.left-tools ul li:nth-child(3){
+    border-right: .1rem solid #e2e2e2;
+}
+.left-tools ul li img{
+    width: 3rem;
+    cursor: pointer;
+}
+.right-tools ul{
+    display: flex;
+}
+.right-tools ul li img{
+    width: 3rem;
+    cursor: pointer;
+}
+.right-tools ul li:first-child{
+    border-right: .1rem solid #e2e2e2;
+}
 
 
 
@@ -89,4 +128,15 @@
 }
 .inbox-message:hover.inbox-message::-webkit-scrollbar-thumb{
     visibility: visible;
+}
+
+/*textaea of message-box div element*/ 
+.message-box textarea::-webkit-scrollbar{
+    width: .8rem;
+    background-color: transparent;
+}
+.message-box textarea::-webkit-scrollbar-thumb{
+    background-color:#967B96;
+    border-radius: 1rem;
+    transition: all 3s;
 }
