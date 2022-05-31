@@ -3,7 +3,7 @@ $(document).ready(function(){
     // toogle sub menu
 $(".parent-li").click(function (e){
         targetElement  = this;
-        const subMenu = this?.children[1];
+        const subMenu = targetElement?.children[1];
         if(subMenu){
          subMenu.classList.toggle("show");
          e.stopPropagation();
@@ -15,7 +15,7 @@ $(".parent-li").click(function (e){
          }
 });
 $(".sub-li").click(function (e){
-    e.stopPropagation()
+    e.stopPropagation();
 });
 
     // remove user from direct msg list 
