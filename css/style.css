@@ -331,11 +331,6 @@ ul.sidebar-top-item li.app a:hover{
 .sort-icon img:last-child{
     display: none;
 }
-#main-content{
-    width: 81%;
-    padding: 1rem;
-    overflow: auto;
-}
 #main-content-wrapper .row{
     align-items: flex-start;
 }
@@ -359,6 +354,12 @@ ul.sidebar-top-item li.app a:hover{
 ---------- MAIN CONTENT STYLE ---------------
 -----------------------------------------------------
 */
+#main-content{
+    width: 81%;
+    height: 100vh;
+    overflow: auto;
+    background: #ffffff;
+}
 .unread-message{
     position: absolute;
     top: 55%;
@@ -370,9 +371,4 @@ ul.sidebar-top-item li.app a:hover{
     font-size: 2.5rem;
     font-weight: 700;
     color: #1D1C1D;
-}
-
-
-.child-1{
-    display: none;
 }

@@ -1,0 +1,41 @@
+/*
+-----------------------------------------------------
+---------- inbox section  style  ---------------
+-----------------------------------------------------
+*/
+.inbox-container{
+    width: 100%;
+}
+.inbox-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1.4rem;
+    border-bottom: .1rem solid #dddddd;
+}
+.inbox-header .user-photo{
+    margin-left: initial;
+}
+.inbox-header .user-title{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-left:1rem;
+}
+.inbox-header .user-title span i{
+    font-size: 1.4rem;
+}
+.inbox-header .user-status {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: .2rem solid #ffffff;
+}
+.inbox-header .user-wrapper{
+    display: flex;
+}
+.inbox-header .user-action span i{
+    font-size: 1.6rem;
+  color: #949494;
+  cursor: pointer;
+}
+/* .inbox-message{}
+.inbox-footer{} */
