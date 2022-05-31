@@ -37,5 +37,56 @@
   color: #949494;
   cursor: pointer;
 }
-/* .inbox-message{}
-.inbox-footer{} */
+.inbox-message{
+    height: 70vh;
+    padding:1rem 1.4rem;
+    overflow: auto;
+}
+.inbox-footer{
+    width:98%;
+    margin: auto;
+    padding: 1rem;
+    border: .1rem solid #dddddd;
+    box-shadow: 0 0 .1rem #dddddd;
+}
+.inbox-footer .message-box{
+    width: 100%;
+}
+
+.inbox-footer .message-box textarea{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    resize: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+-----------------------------------------------------
+---------- customize scrollbar style ---------------
+-----------------------------------------------------
+*/
+.inbox-message::-webkit-scrollbar{
+    width: .8rem;
+    background-color: transparent;
+}
+.inbox-message::-webkit-scrollbar-thumb{
+    visibility: hidden;
+    background-color:#967B96;
+    border-radius: 1rem;
+    transition: all 3s;
+}
+.inbox-message:hover.inbox-message::-webkit-scrollbar-thumb{
+    visibility: visible;
+}
