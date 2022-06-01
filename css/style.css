@@ -162,6 +162,7 @@ ul{
     background: #F8F8F8;
     box-shadow: 0 .2rem 1rem#e6e6e6;
     border: .1rem solid #e2e2e2;
+    z-index: 2;
 }
 .update-status{
     background: #FFFFFF;
