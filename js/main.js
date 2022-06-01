@@ -23,7 +23,33 @@ $(".sub-li").click(function (e){
         $(this.parentElement.parentElement.parentElement).hide();
     })
 
+// send message 
+let messageText = "";
+$("#send-btn").click(sendMessage);
+function sendMessage(){
+    if(messageText){
+        $(".inbox-message").append(`<div class="message-sender">
+        <div class="photo">
+            <img src="images/user/sohelrana.jpg" alt="message sender">
+        </div>
+        <div class="sender-info">
+            <h4 class="sender-name">Sohel <small>6:30 PM</small></h4>
+            <p>${messageText}</p>
+        </div>
+    </div>`)
+    }
+    // clear text from textara
+    // $(".textarea-message").val("");
+    // empty string after send message
+    // messageText = "";
+}
 
+// handle user input 
+$(".textarea-message").blur(handleChange);
+function handleChange(){
+    messageText = $(this).val();
+  
+}
 
 //endline
 });

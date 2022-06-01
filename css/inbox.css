@@ -38,16 +38,16 @@
   cursor: pointer;
 }
 .inbox-message{
+    width: 100%;
     height: 66vh;
     padding:1rem 1.4rem;
     overflow: auto;
 }
 .message-sender{
     width: 100%;
-    height: 100%;
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-end;
+    margin: 1rem 0;
 }
 .message-sender .photo img{
     width: 4rem;
@@ -55,21 +55,27 @@
     object-fit: cover;
     border-radius: .5rem;
 }
+.sender-info{
+    width: 80%;
+}
 .sender-info {
     padding-left: .8rem;
 }
 .sender-info h4.sender-name{
     font-size: 1.6rem;
+
 }
 .sender-info small{
-    font-weight: 300;
-    font-size: 1.4rem;
+    padding-left:.5rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #4e4e4e;
 }
 .sender-info p{
     font-size: 1.5rem;
     font-weight: 400;
     color: #4e4e4e;
-    padding: .5rem 0;
+    padding: .2rem 0;
 }
 .inbox-footer{
     width:98%;
