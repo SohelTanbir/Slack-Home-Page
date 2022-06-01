@@ -26,6 +26,11 @@ $(".sub-li").click(function (e){
 // send message 
 let messageText = "";
 $("#send-btn").click(sendMessage);
+$(document).on("keypress", function(e){
+    if(e.which == 13){
+        sendMessage();
+    }
+})
 function sendMessage(){
     if(messageText){
         $(".inbox-message").append(`<div class="message-sender">
@@ -39,15 +44,15 @@ function sendMessage(){
     </div>`)
     }
     // clear text from textara
-    // $(".textarea-message").val("");
+    $(".textarea-message").val("");
     // empty string after send message
     // messageText = "";
 }
 
 // handle user input 
-$(".textarea-message").blur(handleChange);
+$(".textarea-message").bind("input propertychange", handleChange);
 function handleChange(){
-    messageText = $(this).val();
+    messageText = $(this).val().trim();
   
 }
 

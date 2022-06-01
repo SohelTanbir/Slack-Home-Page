@@ -37,10 +37,10 @@
   color: #949494;
   cursor: pointer;
 }
-.inbox-message{
+.inbox-message {
     width: 100%;
     height: 66vh;
-    padding:1rem 1.4rem;
+    padding: 1rem 1.4rem;
     overflow: auto;
 }
 .message-sender{
@@ -56,14 +56,11 @@
     border-radius: .5rem;
 }
 .sender-info{
-    width: 80%;
-}
-.sender-info {
+    width: 95%;
     padding-left: .8rem;
 }
 .sender-info h4.sender-name{
     font-size: 1.6rem;
-
 }
 .sender-info small{
     padding-left:.5rem;
@@ -75,7 +72,7 @@
     font-size: 1.5rem;
     font-weight: 400;
     color: #4e4e4e;
-    padding: .2rem 0;
+    padding: .2rem 1rem;
 }
 .inbox-footer{
     width:98%;
@@ -90,7 +87,7 @@
     width: 100%;
 }
 
-.inbox-footer .message-box textarea{
+.inbox-footer .message-box input{
     width: 100%;
     height: auto;
     border: none;
@@ -98,8 +95,9 @@
     resize: none;
     font-size: 1.6rem;
     color: #4b4b4b;
+    padding-bottom: 2rem;
 }
-.inbox-footer .message-box textarea::placeholder{
+.inbox-footer .message-box input::placeholder{
     font-family: 'Lato', sans-serif;
     font-size: 1.6rem;
     color: #a8a8a8;
@@ -166,11 +164,11 @@
 }
 
 /*textaea of message-box div element*/ 
-.message-box textarea::-webkit-scrollbar{
+.message-box input::-webkit-scrollbar{
     width: .8rem;
     background-color: transparent;
 }
-.message-box textarea::-webkit-scrollbar-thumb{
+.message-box input::-webkit-scrollbar-thumb{
     background-color:#967B96;
     border-radius: 1rem;
     transition: all 3s;
