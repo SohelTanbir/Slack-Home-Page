@@ -555,12 +555,36 @@ ul.sidebar-top-item li.app a:hover{
     #sidebar-section {
         width: 35%;
     }
+    .search-popup {
+        width: 80%;
+    }
 
 }
+@media screen and (max-width:636px){
+    .search-popup .input-box .search-icon i {
+        top: 5%;
+    }
+    .search-popup .input-box .search-iconbar {
+        top: 4%;
+    }
 
+}
 @media screen and (max-width:480px){
     #sidebar-section {
         width: 50%;
+    }
+    .search-popup {
+        display: none;
+        position: absolute;
+        top: 1%;
+        left: 3%;
+        width: 95%;
+        overflow: hidden;
+        background-color: #ffffff;
+        border-radius: .5rem;
+        box-shadow: 0 0 .5rem#d5e7eb;
+        border: .1rem solid #c0c0c0;
+        z-index: 2;
     }
 }
 @media screen and (max-width:380px){

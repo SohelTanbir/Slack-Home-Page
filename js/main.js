@@ -46,7 +46,7 @@ function sendMessage(){
     // clear text from textara
     $(".textarea-message").val("");
     // empty string after send message
-    // messageText = "";
+    messageText = "";
 }
 
 // handle user input 
