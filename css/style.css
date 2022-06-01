@@ -75,6 +75,7 @@ ul{
     color: #c5c1c5;
     margin-left: 1rem;
     cursor: pointer;
+    display: none;  
 }
 .search-box{
     width:56%;
