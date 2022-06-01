@@ -69,6 +69,11 @@ $(".dismiss").click(()=>{
     $(".search-popup").hide();
 })
 
+// user profile toggle
+$(".user-account").click(()=>{
+    $(".profile-details").toggle();
+})
+
 
 //endline
 });

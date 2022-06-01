@@ -152,6 +152,70 @@ ul{
     border-radius: 50%;
     background: #2BAC76;
 }
+.profile-details{
+    display: none;
+    position: absolute;
+    width: 30rem;
+    top: 6%;
+    right: 1%;
+    border-radius: .5rem;
+    background: #F8F8F8;
+    box-shadow: 0 .2rem 1rem#e6e6e6;
+    border: .1rem solid #e2e2e2;
+}
+.update-status{
+    background: #FFFFFF;
+    padding: .8rem 1rem;
+    margin:  .5rem 2rem;
+    border: .1rem solid #e2e2e2;
+    border-radius: .5rem;
+}
+.update-status:hover{
+    border: .1rem solid #967B96;
+}
+.update-status button{
+    font-size: 1.6rem;
+    color: #8b8b8b;;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+.update-status button span{
+    font-size: 1.7rem;
+    margin-right: 1rem;
+}
+.profile-option-list {
+    width: 100%;
+}
+.profile-option-list ul li{
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}
+.profile-option-list ul li:nth-child(2){
+    border-bottom: .1rem solid #ddd;
+}
+.profile-option-list ul li:nth-child(4){
+    border-bottom: .1rem solid #ddd;
+}
+.profile-option-list ul li a{
+    display: block;
+    font-size: 1.6rem;
+    color:#6e6d6d;
+    cursor: pointer;
+    padding: .5rem 2rem;
+}
+.profile-option-list ul li a:hover{
+    color:#fafafa;
+    background: #1264A3;
+}
+.profile-option-list ul li span:first-child{
+    font-weight: 700;
+}
+.profile-option-list ul li a span i{
+    font-size: 1.4rem;
+    margin-left: 8rem;
+}
 /*
 -----------------------------------------------------
 ---------- SIDEBAR SECTION STYLE ---------------
@@ -395,7 +459,7 @@ ul.sidebar-top-item li.app a:hover{
     background-color: #ffffff;
     border-radius: .5rem;
     box-shadow: 0 0 .5rem#d5e7eb;
-    border-bottom: .1rem solid #d5e7eb;
+    border: .1rem solid #c0c0c0;
     z-index: 2;
 }
 .search-popup .input-box input{
