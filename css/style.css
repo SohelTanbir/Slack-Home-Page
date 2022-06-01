@@ -380,6 +380,90 @@ ul.sidebar-top-item li.app a:hover{
     font-weight: 700;
     color: #1D1C1D;
 }
+/*
+-----------------------------------------------------
+---------- Search PopUp Style ---------------
+-----------------------------------------------------
+*/
+.search-popup {
+    display: none;
+    position: absolute;
+    top: 1%;
+    left: 15%;
+    width: 65%;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-radius: .5rem;
+    box-shadow: 0 0 .5rem#d5e7eb;
+    border-bottom: .1rem solid #d5e7eb;
+    z-index: 2;
+}
+.search-popup .input-box input{
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #757575;
+    padding: 1.3rem 15rem 1.3rem 5rem;
+    background: transparent;
+    border-bottom: .1rem solid #dddddd;
+}
+.search-popup .input-box input::placeholder{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    color: #b9b9b9;
+}
+.search-popup .input-box .search-iconbar{
+    top: 9%;
+}
+.search-popup .input-box .search-iconbar i{
+    font-size: 1.8rem;
+    margin-right: 1rem;
+    color: #9c9c9c;
+    cursor: pointer;
+}
+.search-popup .input-box .search-icon i {
+    font-size: 1.6rem;
+    position: absolute;
+    left: 2%;
+    top: 9%;
+    color: #9c9c9c;
+}
+.search-popup-body{
+    padding: 1rem 2rem;
+}
+.search-popup-body p{
+    font-size: 1.4rem;
+    color: #9c9c9c;
+}
+.search-popup-body button{
+    font-size: 1.6rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: .8rem 1.5rem;
+    background: #E8F5FA;
+    border-radius:.5rem;
+    margin: 1rem .4rem;
+}
+.search-popup-body button:hover{
+    color: #fff;
+    background: #1264A3;
+}
+.search-popup-footer{
+    width: 100%;
+    background: #F8F8F8;
+    padding: 1rem 2rem;
+}
+.search-popup-footer p{
+    font-size: 1.4rem;
+    text-align: right;
+}
+.search-popup-footer p a{
+    color: #2c73b6;
+    text-decoration: underline;
+}
+
 
 /*
 -----------------------------------------------------

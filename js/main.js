@@ -61,6 +61,13 @@ $(".bars-icon").click(function(){
     $("#sidebar-section").toggle();
 })
 
+// toggle search bar
+$("#search_input").click(()=>{
+    $(".search-popup").toggle();
+})
+$(".dismiss").click(()=>{
+    $(".search-popup").hide();
+})
 
 
 //endline
