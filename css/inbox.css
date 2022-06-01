@@ -46,7 +46,6 @@
 .message-sender{
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
     margin: 1rem 0;
 }
 .message-sender .photo img{

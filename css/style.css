@@ -53,8 +53,10 @@ ul{
     padding: .6rem 0;
 }
 .history{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     width: 17%;
-    text-align: end;
 }
 .history img{
     font-size: 1rem;
@@ -67,6 +69,13 @@ ul{
     background: #644565;
     color: #E4DFE4;
     cursor: pointer;
+}
+.history span.bars-icon{
+    font-size: 1.8rem;
+    color: #c5c1c5;
+    margin-left: 1rem;
+    cursor: pointer;
+    display: none;  
 }
 .search-box{
     width:56%;
@@ -348,7 +357,6 @@ ul.sidebar-top-item li.app a:hover{
     background-color:#967B96;
     border-radius: 1rem;
 }
-
 /*
 -----------------------------------------------------
 ---------- MAIN CONTENT STYLE ---------------
@@ -373,3 +381,46 @@ ul.sidebar-top-item li.app a:hover{
     color: #1D1C1D;
 }
 
+/*
+-----------------------------------------------------
+---------- Responsive Style ---------------
+-----------------------------------------------------
+*/
+@media screen and (max-width:992px){
+    #sidebar-section {
+        display: none;
+        position: absolute;
+        top: 8%;
+        left: 0;
+        width: 27%;
+        z-index: 1;
+    }
+    #main-content{
+        width: 100%;
+    }
+    .history span.bars-icon{
+        display: block;
+    }
+}
+@media screen and (max-width:768px){
+    #sidebar-section {
+        width: 35%;
+    }
+
+}
+
+@media screen and (max-width:480px){
+    #sidebar-section {
+        width: 50%;
+    }
+}
+@media screen and (max-width:380px){
+    #sidebar-section {
+        width: 60%;
+    }
+}
+@media screen and (min-width:993px){
+    #sidebar-section {
+        display: block!important;
+    }
+}

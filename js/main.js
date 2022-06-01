@@ -56,5 +56,12 @@ function handleChange(){
   
 }
 
+// togggle sidebar section on md device 
+$(".bars-icon").click(function(){
+    $("#sidebar-section").toggle();
+})
+
+
+
 //endline
 });
