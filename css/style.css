@@ -548,7 +548,7 @@ ul.sidebar-top-item li.app a:hover{
         width: 100%;
     }
     .history span.bars-icon{
-        display: block!important;
+        display: block;
     }
 }
 @media screen and (max-width:768px){
