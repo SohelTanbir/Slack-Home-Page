@@ -47,23 +47,24 @@ ul{
 ---------- HEADER SECTION STYLE ---------------
 -----------------------------------------------------
 */
-#header-section{
+#header-section {
     position: relative;
     width: 100%;
     background: #350D36;
-    padding: .6rem 0;
+    padding: .65rem 1.7rem;
 }
+
 .history{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 17%;
+    width: 22.7rem;
 }
-.history img{
+.history img {
     font-size: 1rem;
     color: #E4DFE4;
     height: 100%;
-    padding:.4rem;
+    padding: .5rem .7rem;
     border-radius: .3rem;
 }
 .history img:hover{
@@ -71,35 +72,37 @@ ul{
     color: #E4DFE4;
     cursor: pointer;
 }
-.search-box{
-    width:56%;
-    margin-left: 1%;
+.search-box {
+    width: 74.1rem;
 }
 .input-box{
     width:100%;
     position: relative;
 }
-.input-box input{
-    width: 100%;
+.input-box input {
+    width: 98.8%;
     border: none;
     outline: none;
     color: #EFEBEF;
+    background: #5D3D5E;
+    padding: .55rem .7rem;
+    border-radius: .4rem;
+}
+.input-box input:hover {
     background: #644565;
-    padding:.7rem;
-    border-radius: .3rem;
 }
 .input-box input::placeholder{
+    letter-spacing: -.05rem;
     color: #EFEBEF;
 }
 .search-iconbar {
     display: flex;
     position: absolute;
-    right: 1%;
-    top: 18%;
+    right: 1.7%;
+    top: 10%;
 }
 .search-iconbar span{
     font-size: 1.4rem;
-    margin-left: .5rem;
 }
 .search-iconbar span.search{
     color: #AA99AA;
@@ -218,7 +221,7 @@ ul{
 */
 #sidebar-section{
     position: relative;
-    width: 19%;
+    width:26.1rem;
 }
 .sidebar-title{
     display: flex;
@@ -226,7 +229,7 @@ ul{
     align-items: center;
     width:100%; 
     background: #3F0E40!important;
-    padding: .5rem 1rem;
+    padding: .5rem 1.5rem;
     background-color: initial;
     cursor: pointer;
     border-top: 1px solid rgb(82,38,83);
