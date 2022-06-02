@@ -436,11 +436,7 @@ ul.sidebar-top-item li.app a:hover{
 }
 span.bars-icon{
     display: none;
-    margin-right: .5rem;
-    cursor: pointer;
-}
-#main-content .title-bar span.bars-icon {
-    padding-right:.5rem;
+    margin-right: 1rem;
     cursor: pointer;
 }
 #main-content .title-bar h4{
