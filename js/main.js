@@ -48,23 +48,19 @@ function sendMessage(){
     // empty string after send message
     messageText = "";
 }
-
 // handle user input 
 $(".textarea-message").bind("input propertychange", handleChange);
 function handleChange(){
-    messageText = $(this).val().trim();
-  
+    messageText = $(this).val().trim(); 
 }
-
 // togggle sidebar section on md device 
 $(".bars-icon").click(function(e){
-    $("#sidebar-section").toggle();
+    $("#sidebar-section").css({left:0, visibility:'visible', transition:'ease-in 0s'})
     e.stopPropagation();
     
 })
 $("#main-content").click(function(){
-    $("#sidebar-section").hide();
-    
+    $("#sidebar-section").css({left:"-100%", visibility:'hidden', transition:'ease-in .2s'})
 })
 
 // toggle search bar

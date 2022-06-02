@@ -48,6 +48,7 @@ ul{
 -----------------------------------------------------
 */
 #header-section{
+    position: relative;
     width: 100%;
     background: #350D36;
     padding: .6rem 0;
@@ -558,10 +559,10 @@ span.bars-icon{
 */
 @media screen and (max-width:992px){
     #sidebar-section {
-        display: none;
+       visibility: hidden;
         position: absolute;
-        top: 8%;
-        left: 0;
+        top: 7%;
+        left: -100%;
         width: 27%;
         z-index: 1;
     }
