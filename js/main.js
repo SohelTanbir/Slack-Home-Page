@@ -54,13 +54,18 @@ function handleChange(){
     messageText = $(this).val().trim(); 
 }
 // togggle sidebar section on md device 
+let sidebarOpen = false;
 $(".bars-icon").click(function(e){
     $("#sidebar-section").css({left:0, visibility:'visible', transition:'ease-in 0s'})
     e.stopPropagation();
+    sidebarOpen = true;
     
 })
 $("#main-content").click(function(){
-    $("#sidebar-section").css({left:"-100%", visibility:'hidden', transition:'ease-in .2s'})
+    if(sidebarOpen){
+        $("#sidebar-section").css({left:"-100%", visibility:'hidden', transition:'ease-in .3s'});
+        sidebarOpen = false;    
+    }
 })
 
 // toggle search bar

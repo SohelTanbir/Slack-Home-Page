@@ -616,6 +616,8 @@ span.bars-icon{
 }
 @media screen and (min-width:993px){
     #sidebar-section {
+        left: 0!important;
+        visibility: visible!important;
         display: block!important;
     }
 }
