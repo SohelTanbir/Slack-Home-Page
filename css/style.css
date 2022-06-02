@@ -70,13 +70,6 @@ ul{
     color: #E4DFE4;
     cursor: pointer;
 }
-.history span.bars-icon{
-    font-size: 1.8rem;
-    color: #c5c1c5;
-    margin-left: 1rem;
-    cursor: pointer;
-    display: none;  
-}
 .search-box{
     width:56%;
     margin-left: 1%;
@@ -232,7 +225,7 @@ ul{
     align-items: center;
     width:100%; 
     background: #3F0E40!important;
-    padding: 1rem;
+    padding: .5rem 1rem;
     background-color: initial;
     cursor: pointer;
     border-top: 1px solid rgb(82,38,83);
@@ -433,6 +426,38 @@ ul.sidebar-top-item li.app a:hover{
     overflow: auto;
     background: #ffffff;
 }
+#main-content .title-bar{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding:1rem;
+    border-bottom: .1rem solid #dddddd;
+    background: #fff;
+}
+span.bars-icon{
+    display: none;
+    margin-right: .5rem;
+    cursor: pointer;
+}
+#main-content .title-bar span.bars-icon {
+    padding-right:.5rem;
+    cursor: pointer;
+}
+#main-content .title-bar h4{
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding-right: .5rem;
+    padding-left: .5rem;
+}
+#main-content .title-bar small{
+    margin-left:.5rem;
+    font-size: 1.2rem;
+    color: #6e6d6d;
+    cursor: pointer;
+}
+#main-content .title-bar small span{
+    margin-left:.5remrem;
+}
 .unread-message{
     position: absolute;
     top: 55%;
@@ -547,7 +572,7 @@ ul.sidebar-top-item li.app a:hover{
     #main-content{
         width: 100%;
     }
-    .history span.bars-icon{
+    span.bars-icon{
         display: block;
     }
 }

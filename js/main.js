@@ -57,8 +57,14 @@ function handleChange(){
 }
 
 // togggle sidebar section on md device 
-$(".bars-icon").click(function(){
+$(".bars-icon").click(function(e){
     $("#sidebar-section").toggle();
+    e.stopPropagation();
+    
+})
+$("#main-content").click(function(){
+    $("#sidebar-section").hide();
+    
 })
 
 // toggle search bar
@@ -70,8 +76,12 @@ $(".dismiss").click(()=>{
 })
 
 // user profile toggle
-$(".user-account").click(()=>{
+$(".user-account").click((e)=>{
     $(".profile-details").toggle();
+    e.stopPropagation();
+})
+$("#main-content").click((e)=>{
+    $(".profile-details").hide();
 })
 
 
