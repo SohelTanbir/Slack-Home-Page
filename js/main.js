@@ -92,6 +92,13 @@ $("#sort-filter").click(function(e){
 $("#main-content").click(function(){
     $("#main-content .title-bar .popup-info").hide();
 })
-
+// toggle sidebar title company info popup
+$(".sidebar-title").click(function(e){
+    $(".sidebar-title .popup-info").toggle();
+    e.stopPropagation();
+})
+$("#main-content").click(function(){
+    $(".sidebar-title .popup-info").hide();
+})
 //endline
 });

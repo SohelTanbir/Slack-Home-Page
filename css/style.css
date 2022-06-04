@@ -263,6 +263,7 @@ ul{
     font-size: 1.4rem;
 }
 .sidebar-title .popup-info{
+    display: none;
     position: absolute;
     top:93%;
     left:6%;
