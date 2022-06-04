@@ -554,7 +554,7 @@ ul.sidebar-top-item li.app a:hover{
 -----------------------------------------------------
 */
 #main-content{
-    width: 100%;
+    width: 81%;
     height: 100vh;
     overflow: auto;
     background: #ffffff;
@@ -664,7 +664,7 @@ span.bars-icon{
     border-radius: .5rem;
     box-shadow: 0 0 .5rem#d5e7eb;
     border: .1rem solid #c0c0c0;
-    z-index: 2;
+    z-index: 222222;
 }
 .search-popup .input-box input{
     width: 100%;

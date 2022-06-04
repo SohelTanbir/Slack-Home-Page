@@ -43,6 +43,7 @@
     padding: 1rem 1.4rem;
     overflow-x: hidden;
 }
+
 .message-sender {
     width: 100%;
     display: flex;
@@ -76,14 +77,32 @@
 .inbox-footer{
     width:98%;
     margin: auto;
-    padding: 1rem;
     border-radius: 1rem;
     border: .1rem solid #dddddd;
     box-shadow: 0 0 .1rem#f3f3f3;
-
+    overflow: hidden;
+}
+.inbox-footer .text-editor{
+    background: #F8F8F8;
+    padding: .5rem 0;
+}
+.inbox-footer .text-editor ul{
+    display: flex;
+}
+.inbox-footer .text-editor ul li{
+    font-size: 1.4rem;
+   color: #756969;
+   margin-right: .6rem ;
+   cursor: pointer;
+   padding: .6rem .8rem;
+   border-radius: .3rem;
+}
+.inbox-footer .text-editor ul li:hover{
+    background: #EFEFEF;
 }
 .inbox-footer .message-box{
     width: 100%;
+    padding: 1rem;
 }
 
 .inbox-footer .message-box input{
@@ -105,6 +124,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding:.5rem;
 }
 .left-tools ul{
     display: flex;
