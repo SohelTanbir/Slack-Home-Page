@@ -1,0 +1,18 @@
+.threads-container {
+    background: #F8F8F8;
+    padding: 2.5rem 1.5rem;
+}
+.thread-body{
+    background: #ffffff;
+    border: .2rem solid #dddddd;
+    padding: 1.2rem;
+}
+.thread-body .inbox-message{
+    padding: 0;
+}
+.thread-body .message-sender{
+    margin:0;
+}
+.thread-body .sender-info p{
+    padding:0;
+}
