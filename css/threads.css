@@ -1,18 +1,98 @@
 .threads-container {
+    height: 100vh;
     background: #F8F8F8;
-    padding: 2.5rem 1.5rem;
+    padding: 1.5rem 1.5rem;
 }
 .thread-body{
     background: #ffffff;
-    border: .2rem solid #dddddd;
+    border: .1rem solid #dddddd;
     padding: 1.2rem;
+    border-radius: 1.5rem;
 }
 .thread-body .inbox-message{
+    height: auto;
     padding: 0;
 }
 .thread-body .message-sender{
     margin:0;
 }
+.thread-body .message-sender .photo img{
+    width: 3.5rem;
+    height: 3.5rem;
+}
+.thead-mention{
+    display: inline-block;
+    border-radius: .3rem;
+    padding: .2rem;
+    font-weight: 700;
+    color: #1D1C1D;
+    background: #F6E5B0;
+    text-transform: lowercase;
+    margin: .5rem 0 .2rem;
+}
 .thread-body .sender-info p{
     padding:0;
+}
+.thread-from {
+    padding: 0 1.5rem;
+}
+.thread-from h4 a{
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: #575257;
+}
+.thread-from h4 i{
+    font-size: 1rem;
+    color: #1D1C1D;
+}
+.thread-from p{
+    font-size: 1.3rem;
+    color: #6b6b6b;
+    padding: .3rem 0 1.4rem;
+}
+.show-more{
+    display: inline-block;
+    margin: 1.5rem 0;
+}
+.user-replies .message-sender {
+    margin-bottom: 1rem;
+}.user-replies .message-sender:hover{
+    background: #F8F8F8;
+    padding: .5rm;
+}
+.single-thread{
+    margin-bottom: 2.5rem;
+}
+.thread-body .inbox-footer{
+    width: 100%;
+}
+.input-check {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem .5rem;
+}
+.input-check input {
+    margin-right: .8rem;
+}
+.input-check span {
+    color: #6b6b6b;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.input-check .thread-from {
+    padding: 0 .5rem;
+}
+
+/*
+-----------------------------------------------------
+---------- customize scrollbar style ---------------
+-----------------------------------------------------
+*/
+#main-content::-webkit-scrollbar{
+    width: .8rem;
+    background-color: transparent;
+}
+#main-content::-webkit-scrollbar-thumb{
+    background-color:#967B96;
+    border-radius: 1rem;
 }
