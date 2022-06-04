@@ -69,8 +69,12 @@ $("#main-content").click(function(){
 })
 
 // toggle search bar
-$("#search_input").click(()=>{
+$("#search_input").click((e)=>{
     $(".search-popup").toggle();
+    e.stopPropagation();
+})
+$("#main-content").click(()=>{
+    $(".search-popup").hide();
 })
 $(".dismiss").click(()=>{
     $(".search-popup").hide();
