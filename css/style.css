@@ -221,7 +221,7 @@ ul{
 */
 #sidebar-section{
     position: relative;
-    width:26.1rem;
+    width:26rem;
 }
 .sidebar-title{
     display: flex;
@@ -229,7 +229,7 @@ ul{
     align-items: center;
     width:100%; 
     background: #3F0E40!important;
-    padding: .5rem 1.5rem;
+    padding: .7rem 1.5rem;
     background-color: initial;
     cursor: pointer;
     border-top: 1px solid rgb(82,38,83);
@@ -242,13 +242,16 @@ ul{
     font-weight: 600;
     text-shadow: .1rem 0rem 0 #e2d5d5;
 }
-.sidebar-title h3 i{
-    font-size: 1.2rem;
-    margin-left: .2rem;
+.sidebar-title h3 i {
+    font-size: 1rem;
+    color: #cac2ca;
+    left: 37.5%;
+    position: absolute;
+    top: 1.9rem;
 }
 .sidebar-title .new-message{
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 3.4rem;
+    height: 3.4rem;
     line-height: 3.3rem;
     text-align: center;
     border-radius:50%;
@@ -267,6 +270,9 @@ ul{
 ul.sidebar-top-item li{
     position: relative;
 }
+ul.sidebar-top-item li:first-child{
+    margin-top: .4rem;
+}
 ul.sidebar-top-item li a{
     display: flex;
     justify-content: flex-start;
@@ -274,7 +280,6 @@ ul.sidebar-top-item li a{
     font-size: 1.6rem;
     color: #b1a3b1;
     font-weight: 400;
-    margin-top: .4rem;
     padding: .4rem 1.5rem;
 }
 ul.sidebar-top-item li a:hover{
@@ -286,11 +291,13 @@ ul.sidebar-top-item li a:hover .extra-options span{
 ul.sidebar-top-item li:last-child a{
     color: #817881;;
 }
-.sidebar-top-item li a img{
-    /* width:1.6rem;
-    height: 1.5rem; */
-    margin-right: .9rem;
+.sidebar-top-item li:first-child a img{
+    width:1.7rem;
 }
+.sidebar-top-item li a img {
+    margin-right: .5rem;
+}
+
 ul.sidebar-top-item li a span{
     font-size: 1.4rem;
     margin-right: .9rem;
@@ -301,7 +308,7 @@ ul.sidebar-top-item li.more{
 }
 ul.sidebar-top-item li.channel,
 ul.sidebar-top-item li.direct-msg{
-    margin-bottom: .1rem;
+    margin:1rem 0 ;
 }
 ul.sidebar-top-item li.more a:hover{
     color: #FFFFFF;
@@ -430,11 +437,12 @@ ul.sidebar-top-item li.app a:hover{
     overflow: auto;
     background: #ffffff;
 }
-#main-content .title-bar{
+#main-content .title-bar {
     width: 100%;
     display: flex;
     justify-content: flex-start;
-    padding:1rem;
+    align-items: center;
+    padding: 1.4rem 1.5rem;
     border-bottom: .1rem solid #dddddd;
     background: #fff;
 }
@@ -444,16 +452,22 @@ span.bars-icon{
     cursor: pointer;
 }
 #main-content .title-bar h4{
-    font-size: 1.8rem;
-    font-weight: bold;
+    font-size: 1.75rem;
+    font-weight: 800;
     padding-right: .5rem;
     padding-left: .5rem;
+    color: #000;
 }
-#main-content .title-bar small{
-    margin-left:.5rem;
-    font-size: 1.2rem;
+#main-content .title-bar span {
+    margin-left: .1rem;
+    font-size: 1.4rem;
     color: #6e6d6d;
     cursor: pointer;
+    font-weight: 400;
+}
+#main-content .title-bar span span{
+    font-size: 1rem;
+    margin-left: .4rem
 }
 #main-content .title-bar small span{
     margin-left:.5remrem;
