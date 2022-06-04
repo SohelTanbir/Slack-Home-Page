@@ -225,6 +225,7 @@ ul{
     width:26rem;
 }
 .sidebar-title{
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -260,6 +261,120 @@ ul{
 }
 .sidebar-title .new-message sapn{
     font-size: 1.4rem;
+}
+.sidebar-title .popup-info{
+    position: absolute;
+    top:93%;
+    left:6%;
+    box-shadow: none;
+}
+.sidebar-title .popup-info .company-info{
+    display: flex;
+    padding:2rem 2.2rem;
+    border-bottom: 0.1rem solid #dddddd;
+}
+.company-name{
+    font-weight: 900;
+    color: #3F0E40;
+    text-transform: capitalize;
+}
+.brand-logo img{
+    width: 3.5rem;
+    margin-right: 1rem;
+    object-fit:cover;
+}
+.link-address{
+    font-size: 1.4rem;
+    color: #928d92;
+}
+.sidebar-title .popup-info .total-message{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:2rem 2.2rem;
+    margin: .8rem 0!important;
+    border-bottom: 0.1rem solid #dddddd;
+}
+.sidebar-title .popup-info .total-message:hover{
+   background: #1264A3;
+}
+.sidebar-title .popup-info .total-message:hover h5{
+    color: #f1f1f1;
+}
+.sidebar-title .popup-info .total-message:hover p{
+    color: #f1f1f1;
+}
+.text-content h5{
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #757575;
+}
+.text-content p{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #6e6e6e;
+    margin: .2rem 0;
+}
+.text-content p span{
+    color: #1264A3;
+    font-weight: 700;
+}
+.message-overview{
+    width: 5.4rem;
+    height: 5.4rem;
+    line-height:4.5rem;
+    text-align: center;
+    border-radius: 50%;
+    margin-left: 1rem;
+    border: .4rem solid #F33D5F;
+}
+.message-overview p{
+    font-size: 1.2rem;
+    color: #5e5e5e;
+}
+.sidebar-title  ul li a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #3F0E40;
+    padding: .35rem 2.2rem;
+    margin: .7rem 0;
+}
+.sidebar-title  ul li a span i{
+    font-size: 1rem;
+    color: #6e6e6e;
+}
+.sidebar-title  ul li:nth-child(2){
+    border-bottom: 0.1rem solid #dddddd;
+}
+.sidebar-title  ul li:nth-child(4){ 
+    border-bottom: 0.1rem solid #dddddd;
+}
+.sidebar-title  ul li:nth-child(5){ 
+    border-bottom: 0.1rem solid #dddddd;
+}
+.sidebar-title  ul li:nth-child(6){ 
+    border-bottom: 0.1rem solid #dddddd;
+}
+
+.sidebar-title  ul li:last-child span{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    padding: .5rem;
+    background-color: #fff;
+    border: .1rem solid #ddd;
+}
+.sidebar-title  ul li:last-child a{
+    padding-right: .6rem;
+}
+.sidebar-title  ul li a:hover{
+    color:#fafafa;
+    background: #1264A3;
+}
+.sidebar-title  ul li a:hover span i{
+    color:#fafafa;
 }
 .sidebar-menu{
     height: 100vh;
