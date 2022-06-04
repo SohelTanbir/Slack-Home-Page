@@ -84,7 +84,14 @@ $(".user-account").click((e)=>{
 $("#main-content").click((e)=>{
     $(".profile-details").hide();
 })
-
+// title bar sort filter 
+$("#sort-filter").click(function(e){
+    $("#main-content .title-bar .popup-info").toggle();
+    e.stopPropagation();
+})
+$("#main-content").click(function(){
+    $("#main-content .title-bar .popup-info").hide();
+})
 
 //endline
 });
