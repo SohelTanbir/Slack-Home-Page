@@ -49,3 +49,34 @@
     font-size: 1.4rem;
     color: #a394a3;
 }
+/*
+-----------------------------------------------------
+---------- Mention page  style  ---------------
+-----------------------------------------------------
+*/
+#mention-sidebar{
+    width: 29%;
+    height: 100%;
+}
+.mention-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    margin: .5rem 0;
+    border-bottom: .1rem solid #dddddd;
+}
+.mention-header .title h3{
+    color: #504e4e;
+    font-weight: 900;
+}
+.mention-header .actions {
+    width: 50%;
+}
+.mention-header .actions ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mention-header .actions ul li img{
+    cursor: pointer;
+}

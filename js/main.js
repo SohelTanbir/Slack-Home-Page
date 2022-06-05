@@ -146,7 +146,18 @@ $("#main-content").click(function(){
 $(".show-more-title").click(function(){
     $(".show-more-users").show();
     $(this).hide();
+});
+// toggle mention sidebar
+$(".mention-dismiss").click(function(){
+    $("#mention-sidebar").hide();
 })
+$(".mentionRection").click(function(){
+    $("#mention-sidebar").show();
+})
+
+
+
+
 
 //endline
 });
