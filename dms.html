@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slack | Unread Message | Vaid Tech</title>
+    <title>Slack | All DMs | Vaid Tech</title>
     <link rel="shortcut icon" href="images/logo/slack-logo-icon.png" type="image/x-icon">
     <!--google fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <!--fontawesome-->
     <link rel="stylesheet" href="css/all.min.css" />
-    <!--inherite css-->
-    <link rel="stylesheet" href="css/inbox.css">
     <!--main stylesheet-->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/inbox.css">
+    <link rel="stylesheet" href="css/threads.css">
+    <link rel="stylesheet" href="css/dms.css">
 </head>
 <body>
 <!--Header Section Start-->    
 <header id="header-section">
+    <div class="container">
         <div class="row">
             <div class="history" title="History">
                 <img src="images/logo/clock.svg" alt="History">
@@ -26,9 +28,8 @@
                 <div class="input-box">
                     <input id="search_input" type="text" placeholder="Search Vaid Tech">
                     <div class="search-iconbar">
-                        <span class="filter-icon" title="Filter"><img src="images/icons/filter-search.png" alt=""></span>
-                        <!-- <span class="filter-icon" title="Filter"><i class="fa-solid fa-arrow-down-9-1"></i></span>
-                        <span class="search" title="Search Vaid Tech"><i class="fa-solid fa-magnifying-glass"></i></span> -->
+                        <span class="filter-icon" title="Filter"><i class="fa-solid fa-arrow-down-9-1"></i></span>
+                        <span class="search" title="Search Vaid Tech"><i class="fa-solid fa-magnifying-glass"></i></span>
                     </div>
                 </div>
                 <div class="search-popup">
@@ -87,6 +88,7 @@
                 </div>
             </div>
         </div>
+    </div>
 </header>
 <!--Header Section End-->    
 
@@ -141,24 +143,23 @@
                     <!-- <span><i class="fa-solid fa-bars-staggered"></i></span> -->
                     All  unreads</a>
                 </li>
-                <li class="parent-li"><a href="threads.html">
+                <li class="parent-li"><a href="index.html">
                     <img class="threads-img" src="images/icons/threads.png" alt="threads icon">
                     <!-- <span><i class="fa-solid fa-comment-dots"></i></span> -->
                     Threads</a>
                 </li>
-                <li class="parent-li"><a href="dms.html">
+                <li class="parent-li"><a href="index.html">
                     <img class="all-dms" src="images/icons/all-dms.png" alt="all dms icon">
                     <!-- <span><i class="fa-solid fa-comments"></i></span> -->
                     All DMs</a>
                 </li>
                 <li class="parent-li"><a href="index.html">
-                    <img class="all-dms" src="images/icons/mention.png" alt="all dms icon">
                     
-                    <!-- <span><i class="fa-solid fa-at"></i></span> -->
+                    <span><i class="fa-solid fa-at"></i></span>
                     Mentions &  reactions</a>
                 </li>
                 <li class="parent-li"><a href="#">
-                    <img class="slack-connect" src="images/icons/slack-connect-2.png" alt="slack connect icon">
+                    <img class="slack-connect" src="images/icons/slack-connect.png" alt="slack connect icon">
                     <!-- <span><i class="fa-regular fa-building"></i></span> -->
                     Slack Connect</a>
                 </li>
@@ -346,23 +347,188 @@
         <span class="bars-icon">
             <img src="images/icons/sidebar-icon.png" alt="Toggle">
         </span>
-        <h4>All unreads</h4>
-        <span id="sort-filter">Sorted alphabetically <span><i class="fas fa-angle-down"></i></span></span>
-        <div class="popup-info">
-            <ul>
-                <li>Sort</li>
-                <li>Alphabetically</li>
-                <li class="active">
-                    <span><i class="fa-solid fa-check"></i></span>
-                     Newest</li>
-                <li>Oldest</li>
-            </ul>
+        <h4>All direct messages</h4>
+    </div>
+    <div class="mention-bar">
+        <span>To:</span>
+        <input type="text" placeholder="@somebody or somebody@example.com">
+    </div>
+    <div class="threads-container">
+        <div class="single-thread direct-message-container">
+            <div class="left-user">
+                <div class="thread-header dm-date">
+                    <div class="thread-from">
+                        <h4><a href="#">Thursday, June 2nd</a> </h4>
+                    </div>
+                </div>
+                <div class="thread-body dms-body">
+                    <div class="inbox-message">
+                       <div class="user-replies">
+                        <div class="message-sender">
+                            <div class="photo">
+                                <img src="images/user/salman.jpg" alt="message sender">
+                            </div>
+                            <div class="sender-info">
+                                <div class="sender-info-header">
+                                    <h4 class="sender-name">Salman</h4>
+                                    <div class="send-time">
+                                        <span>8:50 AM</span>
+                                    </div>
+                                </div>
+                                <p class="msg"> <span>You:</span> vaia sokale msg dite bolchilen</p>
+                            </div>
+                        </div>
+                       </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="single-thread direct-message-container">
+            <div class="thread-header dm-date">
+                <div class="thread-from">
+                    <h4><a href="#">Wednesday, June 1st</a> </h4>
+                </div>
+            </div>
+            <div class="thread-body dms-body">
+                <div class="inbox-message">
+                   <div class="user-replies">
+                    <div class="message-sender">
+                        <div class="photo">
+                            <img src="images/user/mehedy.jpg" alt="message sender">
+                        </div>
+                        <div class="sender-info">
+                            <div class="sender-info-header">
+                                <h4 class="sender-name">Mehedy</h4>
+                                <div class="send-time">
+                                    <span>2:50 PM</span>
+                                </div>
+                            </div>
+                            <p class="msg"> <span>You:</span> ok</p>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="single-thread direct-message-container">
+            <div class="left-user">
+                <div class="thread-header dm-date">
+                    <div class="thread-from">
+                        <h4><a href="#">Thursday, June 3rd</a> </h4>
+                    </div>
+                </div>
+                <div class="thread-body dms-body">
+                    <div class="inbox-message">
+                       <div class="user-replies">
+                        <div class="message-sender">
+                            <div class="photo">
+                                <img src="images/user/kazal.jpg" alt="message sender">
+                            </div>
+                            <div class="sender-info">
+                                <div class="sender-info-header">
+                                    <h4 class="sender-name">Kazal</h4>
+                                    <div class="send-time">
+                                        <span>8:50 AM</span>
+                                    </div>
+                                </div>
+                                <p class="msg"> <span>You:</span> test msg</p>
+                            </div>
+                        </div>
+                       </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="single-thread direct-message-container">
+            <div class="thread-header dm-date">
+                <div class="thread-from">
+                    <h4><a href="#">Wednesday, June 1st</a> </h4>
+                </div>
+            </div>
+            <div class="thread-body dms-body">
+                <div class="inbox-message">
+                   <div class="user-replies">
+                    <div class="message-sender">
+                        <div class="photo">
+                            <img src="images/user/kanon.jpg" alt="message sender">
+                        </div>
+                        <div class="sender-info">
+                            <div class="sender-info-header">
+                                <h4 class="sender-name">Kanon</h4>
+                                <div class="send-time">
+                                    <span>2:50 PM</span>
+                                </div>
+                            </div>
+                            <p class="msg"> <span>You:</span> well done</p>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="single-thread direct-message-container">
+            <div class="left-user">
+                <div class="thread-header dm-date">
+                    <div class="thread-from">
+                        <h4><a href="#">Thursday, June 2nd</a> </h4>
+                    </div>
+                </div>
+                <div class="thread-body dms-body">
+                    <div class="inbox-message">
+                       <div class="user-replies">
+                        <div class="message-sender">
+                            <div class="photo">
+                                <img src="images/user/salman.jpg" alt="message sender">
+                            </div>
+                            <div class="sender-info">
+                                <div class="sender-info-header">
+                                    <h4 class="sender-name">Salman</h4>
+                                    <div class="send-time">
+                                        <span>8:50 AM</span>
+                                    </div>
+                                </div>
+                                <p class="msg"> <span>You:</span> vaia sokale msg dite bolchilen</p>
+                            </div>
+                        </div>
+                       </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="single-thread direct-message-container">
+            <div class="thread-header dm-date">
+                <div class="thread-from">
+                    <h4><a href="#">Wednesday, June 1st</a> </h4>
+                </div>
+            </div>
+            <div class="thread-body dms-body">
+                <div class="inbox-message">
+                   <div class="user-replies">
+                    <div class="message-sender">
+                        <div class="photo">
+                            <img src="images/user/mouazzem.png" alt="message sender">
+                        </div>
+                        <div class="sender-info">
+                            <div class="sender-info-header">
+                                <h4 class="sender-name">Mouazzem</h4>
+                                <div class="send-time">
+                                    <span>2:50 PM</span>
+                                </div>
+                            </div>
+                            <p class="msg"> <span>You:</span> ok</p>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+                
+            </div>
         </div>
     </div>
-        <div class="unread-message">
-            <img src="images/logo/allread.png" alt="">
-            <h2>All done <br>The future is yours.</h2>
-        </div>
 </div>
 <!--main Conent End-->
    </div>

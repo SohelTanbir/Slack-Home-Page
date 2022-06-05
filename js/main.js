@@ -144,7 +144,8 @@ $("#main-content").click(function(){
 
 // handle show more users
 $(".show-more-title").click(function(){
-    $(".show-more-users").toggle()
+    $(".show-more-users").show();
+    $(this).hide();
 })
 
 //endline

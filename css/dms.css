@@ -1,0 +1,51 @@
+
+.mention-bar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1.3rem 1.5rem;
+    border-bottom: .1rem solid #dddddd;
+    background: #fff;
+}
+.mention-bar span{
+    color: #969494;
+}
+.mention-bar input{
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #504e4e;
+    padding: .5rem 1rem ;
+}
+.mention-bar input::placeholder{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #504e4e;
+}
+.dm-date{
+    margin:.5rem 0 1rem;
+}
+.dm-date h4 a{
+    font-weight: 600;
+    font-size: 1.33rem;
+}
+.direct-message-container p.msg{
+    padding-top: .4rem;
+    color: rgb(188,171,188);
+} 
+.dms-body{
+    padding: 1.2rem 1.2rem 0rem;
+}
+.dms-body:hover{
+   background: #F8F8F8;
+}
+.sender-info-header{
+    display: flex;
+    justify-content:space-between;
+}
+.sender-info-header span{
+    font-size: 1.4rem;
+    color: #a394a3;
+}
