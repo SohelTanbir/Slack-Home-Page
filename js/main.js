@@ -103,6 +103,25 @@ $(".sidebar-title").click(function(e){
 })
 $("#main-content").click(function(){
     $(".sidebar-title .popup-info").hide();
-})
+});
+// handle emoji action
+$(".emoji").click(function(e){
+    e.stopPropagation();
+    const allEmoji = this.parentElement.parentElement.parentElement.parentElement.children[3];
+    allEmoji.style.display = "block";
+    console.log($(".popup-info.emoji-popup").is("[style]"));
+   if($(".popup-info.emoji-popup").is("[style]")){
+    $("#main-content").css({overflow:"hidden"})
+   }
+
+});
+$("#main-content").click(function(){
+    const allEmoji = this.parentElement.parentElement.parentElement.parentElement.children[3];
+    $(".popup-info.emoji-popup").hide();
+    $(".popup-info.emoji-popup").removeAttr("style");
+    $("#main-content").css({overflow:"auto"})
+});
+// disable scrollbar when thread action tool opened
+
 //endline
 });

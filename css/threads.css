@@ -16,6 +16,7 @@
 .thread-body .inbox-message{
     height: auto;
     padding: 0;
+    overflow: initial;
 }
 .thread-body .message-sender{
     margin:0;
@@ -96,6 +97,14 @@
 }
 .thread-action .popup-info ul li img{
     width:100%;
+}
+.popup-info.emoji-popup{
+    display: none;
+    position: absolute;
+    top: -12rem;
+    right:1%;
+    width: 35rem;
+    z-index: 9999999999;
 }
 .single-thread{
     margin-bottom: 2.5rem;
