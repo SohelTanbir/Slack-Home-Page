@@ -42,6 +42,9 @@
 .thread-body .sender-info p{
     padding:0;
 }
+.thread-body #send-btn{
+    border-right:0
+}
 .thread-from {
     padding: 0 1.2rem;
 }

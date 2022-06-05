@@ -52,7 +52,27 @@ function sendMessage(){
 $(".textarea-message").bind("input propertychange", handleChange);
 function handleChange(){
     messageText = $(this).val().trim(); 
+        changeIcon(messageText, this)
 }
+// change icon color when focus on textarea input
+$(".textarea-message").focus(function(){
+    $(".inbox-footer .text-editor ul li").css({color:"#756969"})
+});
+
+
+// change send btn icon depent on input filed
+function changeIcon(text, targentElement){
+    const sendImg = targentElement.parentNode.parentNode.parentNode.children[2].children[1].children[0].children[0].children[0]
+    if(text){
+       sendImg.setAttribute("src", "../images/icons/send-bg-color.png");
+    }else{
+        sendImg.setAttribute("src", "../images/icons/send.png");
+    }
+}
+
+$(".textarea-message").focusout(function(){
+    $(".inbox-footer .text-editor ul li").css({color:"#cfcfcf"})
+})
 // togggle sidebar section on md device 
 let sidebarOpen = false;
 $(".bars-icon").click(function(e){
