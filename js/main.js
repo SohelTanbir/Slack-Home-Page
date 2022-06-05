@@ -121,7 +121,11 @@ $("#main-content").click(function(){
     $(".popup-info.emoji-popup").removeAttr("style");
     $("#main-content").css({overflow:"auto"})
 });
-// disable scrollbar when thread action tool opened
+
+// handle show more users
+$(".show-more-title").click(function(){
+    $(".show-more-users").toggle()
+})
 
 //endline
 });

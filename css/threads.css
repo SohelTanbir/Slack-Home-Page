@@ -59,7 +59,7 @@
     color: #6b6b6b;
     padding: .3rem 0 1.4rem;
 }
-.show-more{
+.show-more-title{
     display: inline-block;
     margin: 1.5rem 0;
 }
@@ -128,7 +128,9 @@
 .input-check .thread-from {
     padding: 0 .5rem;
 }
-
+.show-more-users{
+    display: none;
+}
 /*
 -----------------------------------------------------
 ---------- customize scrollbar style ---------------
