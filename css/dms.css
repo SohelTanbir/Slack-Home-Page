@@ -55,15 +55,18 @@
 -----------------------------------------------------
 */
 #mention-sidebar{
+    position: relative;
     width: 29%;
-    height: 100%;
+    display: none;
 }
 .mention-header{
     display: flex;
     justify-content: space-between;
     padding: 0 1.5rem;
     margin: .5rem 0;
+    background: #fff;
     border-bottom: .1rem solid #dddddd;
+    z-index: 99;
 }
 .mention-header .title h3{
     color: #504e4e;
@@ -79,4 +82,71 @@
 }
 .mention-header .actions ul li img{
     cursor: pointer;
+}
+.mention-body{
+    height: 100vh;
+    overflow: auto;
+}
+.mention-item{
+    padding:.5rem 1.5rem;
+    border-bottom: .1rem solid #dddddd;
+}
+.mention-owner p{
+    font-size: 1.4rem;
+    color: rgb(117, 112, 117);
+    margin: .5rem 0 .6rem;
+}
+.mention-owner p span{
+    color: #646363;
+    font-weight: 700;
+}
+.mention-user{
+    display: flex;
+    justify-content:flex-start;
+    margin-left: -0.5rem;
+}
+.mention-user .react-icon{
+    flex-basis: 15%;
+}
+.mention-user .react-icon{
+    margin-right:.3rem;
+}
+.mention-user .info{
+    flex-basis: 80%;
+}
+.mention-user .name h5{
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: #504e4e;
+}
+.mention-user .name h5 span{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-left: .5rem;
+    color: rgb(117, 112, 117);
+}
+.mention-user .message{
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin: .5rem 0;
+    color: rgb(117, 112, 117);
+}
+.reaction-view {
+    margin-left: 3.5rem;
+    cursor: pointer;
+}
+
+
+/*
+-----------------------------------------------------
+---------- customize scrollbar style ---------------
+-----------------------------------------------------
+*/
+.mention-body::-webkit-scrollbar{
+    width: .8rem;
+    background-color: transparent;
+}
+.mention-body::-webkit-scrollbar-thumb{
+    background-color:#967B96;
+    border-radius: 1rem;
 }
