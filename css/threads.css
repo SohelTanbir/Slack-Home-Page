@@ -4,10 +4,14 @@
     padding: 1.5rem 1.5rem;
 }
 .thread-body{
+    position: relative;
     background: #ffffff;
     border: .1rem solid #dddddd;
     padding: 1.2rem;
     border-radius: 1.5rem;
+}
+.user-replies .message-sender{
+    position: relative;
 }
 .thread-body .inbox-message{
     height: auto;
@@ -15,6 +19,10 @@
 }
 .thread-body .message-sender{
     margin:0;
+}
+.thread-body .message-sender:hover{
+    background: #F8F8F8;
+    padding: 1rm;
 }
 .thread-body .message-sender .photo img{
     width: 3.5rem;
@@ -56,9 +64,38 @@
 }
 .user-replies .message-sender {
     margin-bottom: 1rem;
-}.user-replies .message-sender:hover{
+}
+.user-replies .message-sender:hover{
     background: #F8F8F8;
     padding: .5rm;
+}
+.thread-action{
+    position: absolute;
+    right: 10%;
+    top: -2rem;
+    display: none;
+}
+.user-replies .message-sender:hover .thread-action{
+    display: block;
+}
+.thread-body .message-sender:hover .thread-action{
+    display: block;
+}
+.thread-action .popup-info{
+    width: 20rem;
+    background: #fff;
+    padding: .5rem;
+}
+.thread-action .popup-info ul{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.thread-action .popup-info ul li{
+    cursor: pointer;
+}
+.thread-action .popup-info ul li img{
+    width:100%;
 }
 .single-thread{
     margin-bottom: 2.5rem;
