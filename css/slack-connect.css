@@ -1,11 +1,16 @@
-.slack-connect-body{
+.slack-connect-container{
     width: 100%;
 }
-.slack-connect-body .title-bar{
+.slack-connect-body{
+    width: 100%;
+    height: 95vh;
+    overflow: auto;
+}
+.slack-connect-container .title-bar{
     padding: 1rem 1.5rem!important;
     justify-content: space-between!important;
 }
-.slack-connect-body .title-bar button{
+.slack-connect-container .title-bar button{
     font-size: 1.2rem;
     font-weight: 600;
     outline: none;
@@ -17,7 +22,7 @@
     padding: .7rem 1.5rem;
     border-radius: .5rem;
 }
-.slack-connect-body .title-bar button:hover{
+.slack-connect-container .title-bar button:hover{
     background: #F8F8F8;
     box-shadow: .1rem .3rem 1rem #F8F8F8;
 }
@@ -70,3 +75,114 @@
 .banner-image img{
     width: 80%;
 }
+.slack-together{
+    background: #F8F8F8;
+    padding: 5.4rem 5rem 10rem;
+}
+.slack-together .row{
+    flex-wrap: wrap!important;
+}
+.slack-together .heading h3{
+    font-size: 1.8rem;
+    color: #350d36;
+   text-align: center;
+   margin-bottom: 4rem;
+}
+.togerther-option{
+    width: 49.5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2.5rem;
+    border-radius:1rem;
+    background: #FFFFFF;
+    border: .1rem solid #dddddd;
+}
+.togerther-option .icon{
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height: 3.3rem;
+    border-radius: 50%;
+    text-align: center;
+    background: #F2F2F2;
+    margin-right: 1.5rem;
+}
+.togerther-option .icon i{
+    font-size: 1.6rem;
+    color: #756c75;
+}
+.togerther-option .text h4{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #3f3f3f;
+}
+.togerther-option .text h4 sup{
+    font-size: 1rem;
+    color: #fff;
+    background:#3f3f3f ;
+    padding: .2rem .5rem;
+    border-radius: .5rem;
+    text-transform: uppercase;
+}
+.togerther-option .text p{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #8d8c8c;
+    padding: .2rem  0;
+}
+
+/*
+-----------------------------------------------------
+---------- customize scrollbar style ---------------
+-----------------------------------------------------
+*/
+.slack-connect-body::-webkit-scrollbar{
+    width: .8rem;
+    background-color: transparent;
+}
+.slack-connect-body::-webkit-scrollbar-thumb{
+    background-color:#967B96;
+    border-radius: 1rem;
+}
+
+
+/*
+-----------------------------------------------------
+---------- Responsive Style ---------------
+-----------------------------------------------------
+*/
+@media screen and (max-width:1200px){
+    .slack-banner .banner-text h1 {
+        padding-right: 15%;
+    }
+    .slack-banner .banner-text p {
+        padding: 1rem 12% 2rem 0;
+    }
+}
+@media screen and (max-width:992px){
+    .slack-banner .banner-text {
+        width: 100%;
+        text-align: center;
+    }
+    .banner-image {
+        width: 100%;
+        text-align: center;
+    }
+    .banner-image  img{
+        width: 30rem;
+        margin-bottom: 4rem;
+    }.togerther-option {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+@media screen and (max-width:786px){
+    .slack-together {
+        padding: 5.4rem 2rem 10rem;
+    }
+    .slack-banner .banner-text h1 {
+        padding-right: 10%;
+    }
+}
+
+/*
