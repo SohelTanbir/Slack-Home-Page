@@ -21,3 +21,51 @@
     background: #F8F8F8;
     box-shadow: .1rem .3rem 1rem #F8F8F8;
 }
+.slack-banner{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: #E0EEE7;
+}
+.slack-banner .banner-text{
+    flex-basis: 50%;
+    padding: 3rem 0 5.8rem 5.2rem;
+}
+.slack-banner .banner-text h1{
+    font-size: 3.2rem;
+    font-weight: 600;
+    padding-right:12rem;
+}
+.slack-banner .banner-text p{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #756c75;
+    line-height: 2.2rem;
+    padding: 1rem 12rem 2rem 0;
+}
+.slack-banner .banner-text button{
+    font-size: 1.2rem;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    color: #444444;
+    background: #F8F8F8;
+    cursor: pointer;;
+    padding: .8rem 1.5rem;
+    border-radius: 3rem;
+}
+.slack-banner .banner-text button:hover{
+    background: #fff;
+}
+.slack-banner .banner-text button i{
+    font-size: 1.4rem;
+    color: #F2C744;
+    outline: #616060;
+}
+.banner-image {
+    margin: 1rem 1rem 0 0;
+}
+.banner-image img{
+    width: 80%;
+}
