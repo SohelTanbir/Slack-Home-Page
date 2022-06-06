@@ -1,0 +1,30 @@
+
+.draft-body{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .8rem;
+    border-radius: 1.2rem;
+    box-shadow: 0rem 0rem 0rem #ebebeb;
+}
+.draft-message .thread-from{
+    padding: 0;
+}
+.draft-message .thread-from p{
+    padding-bottom: .5rem!important;
+}
+.draft-message .thread-from p{
+    color:rgb(167, 167, 167);
+}
+.draft-message .thread-from p:last-child{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color:#1D1C1D;
+}
+.draft-message .date-time span{
+    font-size:1.2rem;
+    font-weight: 600;
+    color: #837f7f;
+}
+.draft-message .date-time span span{
+    margin-left: .5rem;
+}

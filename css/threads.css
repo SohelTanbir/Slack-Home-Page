@@ -2,6 +2,7 @@
     height: 100vh;
     background: #F8F8F8;
     padding: 1.5rem 1.5rem;
+    overflow: auto;
 }
 .thread-body{
     position: relative;
@@ -147,11 +148,11 @@
 ---------- customize scrollbar style ---------------
 -----------------------------------------------------
 */
-#main-content::-webkit-scrollbar{
+.threads-container::-webkit-scrollbar{
     width: .8rem;
     background-color: transparent;
 }
-#main-content::-webkit-scrollbar-thumb{
+.threads-container::-webkit-scrollbar-thumb{
     background-color:#967B96;
     border-radius: 1rem;
 }
