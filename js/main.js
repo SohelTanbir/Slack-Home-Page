@@ -139,7 +139,7 @@ $("#main-content").click(function(){
     const allEmoji = this.parentElement.parentElement.parentElement.parentElement.children[3];
     $(".popup-info.emoji-popup").hide();
     $(".popup-info.emoji-popup").removeAttr("style");
-    $("#main-content").css({overflow:"auto"})
+    // $("#main-content").css({overflow:"auto"})
 });
 
 // handle show more users

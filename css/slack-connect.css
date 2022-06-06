@@ -1,0 +1,23 @@
+.slack-connect-body{
+    width: 100%;
+}
+.slack-connect-body .title-bar{
+    padding: 1rem 1.5rem!important;
+    justify-content: space-between!important;
+}
+.slack-connect-body .title-bar button{
+    font-size: 1.2rem;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    color: #616060;
+    background: #fff;
+    cursor: pointer;
+    border: .1rem solid #BBBABB;
+    padding: .7rem 1.5rem;
+    border-radius: .5rem;
+}
+.slack-connect-body .title-bar button:hover{
+    background: #F8F8F8;
+    box-shadow: .1rem .3rem 1rem #F8F8F8;
+}

@@ -4,6 +4,555 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slack | Slack Connect | Vaid Tech</title>
+    <link rel="shortcut icon" href="images/logo/slack-logo-icon.png" type="image/x-icon">
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!--fontawesome-->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!--main stylesheet-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/inbox.css">
+    <link rel="stylesheet" href="css/threads.css">
+    <link rel="stylesheet" href="css/dms.css">
+    <link rel="stylesheet" href="css/draft.css">
+    <link rel="stylesheet" href="css/slack-connect.css">
+</head>
+<body>
+<!--Header Section Start-->    
+<header id="header-section">
+    <div class="container">
+        <div class="row">
+            <div class="history" title="History">
+                <img src="images/logo/clock.svg" alt="History">
+            </div>
+            <div class="search-box">
+                <div class="input-box">
+                    <input id="search_input" type="text" placeholder="Search Vaid Tech">
+                    <div class="search-iconbar">
+                        <span class="filter-icon" title="Filter"><i class="fa-solid fa-arrow-down-9-1"></i></span>
+                        <span class="search" title="Search Vaid Tech"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    </div>
+                </div>
+                <div class="search-popup">
+                    <div class="input-box">
+                        <span class="search-icon"><i class="fa-solid fa-search"></i></span>
+                        <input type="text" placeholder="Search for something. anything. you have the window open anyway">
+                    <div class="search-iconbar">
+                        <span class="filter-icon" title="Filter"><i class="fa-solid fa-arrow-down-9-1"></i></span>
+                        <span class="dismiss" title="Search Vaid Tech"><i class="fa fa-xmark"></i></span>
+                    </div>
+                    <div class="search-popup-body">
+                        <p>I'm looking for...</p>
+                        <div class="filter-option">
+                            <button><i class="fa-solid fa-message"></i> Message</button>
+                            <button><i class="fa-solid fa-layer-group"></i> Files</button>
+                            <button><i class="fa-solid fa-layer-group"></i> Channels</button>
+                            <button><i class="fa-solid fa-user-group"></i> People</button>
+                        </div>
+                    </div>
+                    <div class="search-popup-footer">
+                        <p>Not the results you expected? <a href="#">Give feedback or learn more</a></p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="user-account">
+                <span class="help-icon" title="Help">
+                    <img src="images/logo/question-mark.svg" alt="History">
+                </span>
+                <div class="user-photo" title="Sohel">
+                    <img src="images/user/sohelrana.jpg" alt="user">
+                    <div class="user-status"></div>
+                </div>
+                <div class="profile-details">
+                    <div class="message-sender">
+                        <div class="photo">
+                            <img src="images/user/sohelrana.jpg" alt="message sender">
+                        </div>
+                        <div class="sender-info">
+                            <h4 class="sender-name">Sohel</h4>
+                            <p>Active</p>
+                        </div>
+                    </div>
+                    <div class="update-status">
+                        <button><span><i class="fa-solid fa-face-smile"></i></span> Update your status</button>
+                    </div>
+                    <div class="profile-option-list">
+                        <ul>
+                            <li><a href="#">Set yourself as <span>away</span></a></li>
+                            <li><a href="#">Pause Notification <span><i class="fas fa-angle-right"></i></span></a></li>
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Preferences</a></li>
+                            <li><a href="#">Sign out of Vaid Tech</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--Header Section End-->    
+
+<!--Main Section Start-->
+<main id="main-content-wrapper">
+   <div class="row">
+        <!--Sidebar Section Start-->
+<aside id="sidebar-section">
+        <div class="sidebar-title">
+            <h3>Vaid Tech  <i class="fa-solid fa-angle-down"></i></h3>
+            <div class="new-message" title="New message">
+                <span><i class="fa-regular fa-pen-to-square"></i></span>
+            </div>
+            <div class="popup-info">
+                <div class="company-info">
+                    <div class="brand-logo">
+                        <img src="images/logo/logo.png" alt="logo">
+                    </div>
+                    <div class=info">
+                        <h4 class="company-name">Vaid Tech</h4>
+                        <a class="link-address" href="vaidtech.slack.com">vaidtech.slack.com</a>
+                    </div>
+                </div>
+                <div class="total-message">
+                    <div class="text-content">
+                        <h5>Total Messages</h5>
+                        <p>Upgrade to access your first 56k <br>message <span>See plans</span></p>
+                    </div>
+                    <div class="message-overview">
+                        <div class="message-circle">
+                            <p>66k</p>
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    <li><a href="#">Invite people to Vaid Tech</a></li>
+                    <li><a href="#">Create a channel</a></li>
+                    <li><a href="#">Preferences</a></li>
+                    <li><a href="#">Administration <span><i class="fas fa-angle-right"></i></span></a></li>
+                    <li><a href="#">Tools <span><i class="fas fa-angle-right"></i></span></a></li>
+                    <li><a href="#">Sign out of Vaid Tech</a></li>
+                    <li><a href="#">Add workspaces <span><i class="fas fa-angle-right"></i></span></a></li>
+                    <li><a href="#">Open the Slack App <span><img src="images/logo/slack-logo-icon.png" alt=""></span></a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="sidebar-menu">
+            <ul class="sidebar-top-item">
+                <li class="parent-li"><a href="index.html">
+                    <img class="unread-img" src="images/icons/unread.png" alt="unread-icon">
+                    <!-- <span><i class="fa-solid fa-bars-staggered"></i></span> -->
+                    All  unreads</a>
+                </li>
+                <li class="parent-li"><a href="index.html">
+                    <img class="threads-img" src="images/icons/threads.png" alt="threads icon">
+                    <!-- <span><i class="fa-solid fa-comment-dots"></i></span> -->
+                    Threads</a>
+                </li>
+                <li class="parent-li"><a href="index.html">
+                    <img class="all-dms" src="images/icons/all-dms.png" alt="all dms icon">
+                    <!-- <span><i class="fa-solid fa-comments"></i></span> -->
+                    All DMs</a>
+                </li>
+                <li class="parent-li mentionRection"><a href="#">
+                    <img class="all-dms" src="images/icons/mention.png" alt="all dms icon">
+                    <!-- <span><i class="fa-solid fa-at"></i></span> -->
+                    Mentions &  reactions</a>
+                </li>
+                <li class="parent-li draft-item"><a href="draft.html">
+                    <img class="all-dms" src="images/icons/draft.png" alt="all dms icon">
+                    <!-- <span><i class="fa-solid fa-at"></i></span> -->
+                    Drafts
+                    <span>1</span>
+                    </a>
+                </li>
+                <li class="parent-li"><a href="#">
+                    <img class="slack-connect" src="images/icons/slack-connect.png" alt="slack connect icon">
+                    <!-- <span><i class="fa-regular fa-building"></i></span> -->
+                    Slack Connect</a>
+                </li>
+                <li class="more parent-li"><a href="index.html">
+                    <span class="more-icon"><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                    More</a>
+                </li>
+                <li class="channel parent-li">
+                    <a href="#">
+                    <div class="sort-icon">
+                        <img class="channel-icon" src="images/icons/sort-right.png" alt="sort right icon">
+                        <img class="channel-icon" src="images/icons/sort-down.png" alt="sort right icon">
+                    </div>
+                     Channels
+                     <div class="extra-options">
+                        <span><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                        <span><i class="fa-solid fa-plus"></i></span>
+                     </div>
+                    </a>
+                     <div class="sidebar-sub-menu">
+                        <ul>
+                            <li class="sub-li"><a href="#"> <span><i class="fa-solid fa-hashtag"></i></span>general</a></li>
+                            <li class="sub-li"><a href="#"> <span><i class="fa-solid fa-lock"></i></span>workspace</a></li>
+                            <li class="sub-li"><a class="personal" href="#"> <span><i class="fa-solid fa-plus"></i></span>personal</a></li>
+                            <li class="sub-li"><a href="#"> <span><i class="fa-solid fa-plus"></i></span>Add channel</a></li>
+                        </ul>
+                     </div>
+                    </li>
+                <li class="direct-msg parent-li"><a href="#">
+                    <div class="sort-icon">
+                        <img class="direct-message-icon" src="images/icons/sort-right.png" alt="sort right icon">
+                        <img class="direct-message-icon" src="images/icons/sort-down.png" alt="sort right icon">
+                    </div>
+                     Direct message
+                     <div class="extra-options">
+                        <span><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                        <span><i class="fa-solid fa-plus"></i></span>
+                     </div>
+                    </a>
+                    <div class="sidebar-sub-menu">
+                        <ul>
+                            <li class="sub-li">
+                                <a href="#"> 
+                                    <div class="user-photo" title="Sohel">
+                                        <img src="images/user/slack-bot.png" alt="slack bot">
+                                    </div>
+                                    Slackbot
+                                <div class="extra-options">
+                                    <span class="removeUser"><i class="fa-solid fa-xmark"></i></i></span>
+                                 </div>
+                            </a>
+                        </li>
+                        <li class="sub-li"><a href="inbox.html"> 
+                                <div class="user-photo" title="Sohel">
+                                    <img src="images/user/sohelrana.jpg" alt="slack bot">
+                                    <div class="user-status"></div>
+                                </div>
+                                Sohel <span class="self-user">you</span>
+                                <div class="extra-options">
+                                    <span class="removeUser"><i class="fa-solid fa-xmark"></i></i></span>
+                                 </div>
+                            </a>
+                        </li>
+                        <li class="sub-li">
+                                <a href="inbox.html"> 
+                                <div class="user-photo" title="Sohel">
+                                    <img src="images/user/arman.jpg" alt="slack bot">
+                                    <div class="user-status"></div>
+                                </div>
+                                arman
+                                    <div class="extra-options">
+                                    <span class="removeUser"><i class="fa-solid fa-xmark"></i></i></span>
+                                 </div>
+                            </a>
+                        </li>
+                            <li class="sub-li"><a href="inbox.html"> 
+                                <div class="user-photo" title="Sohel">
+                                    <img src="images/user/kazal.jpg" alt="slack bot">
+                                    <div class="user-status"></div>
+                                </div>
+                                kazal
+                                    <div class="extra-options">
+                                    <span class="removeUser"><i class="fa-solid fa-xmark"></i></i></span>
+                                 </div>
+                            </a>
+                        </li>
+                            <li class="sub-li"><a href="inbox.html"> 
+                                <div class="user-photo" title="Sohel">
+                                    <img src="images/user/slack-bot.png" alt="slack bot">
+                                    <div class="user-status"></div>
+                                </div>
+                                mail
+                                    <div class="extra-options">
+                                    <span class="removeUser"><i class="fa-solid fa-xmark"></i></i></span>
+                                 </div>
+                            </a>
+                        </li>
+                            <li class="sub-li"><a href="inbox.html"> 
+                                <div class="user-photo" title="Sohel">
+                                    <img src="images/user/mehedy.jpg" alt="slack bot">
+                                    <div class="user-status"></div>
+                                </div>
+                                Mehedy
+                                    <div class="extra-options">
+                                    <span class="removeUser"><i class="fa-solid fa-xmark"></i></i></span>
+                                 </div>
+                            </a>
+                        </li>
+                        <li class="sub-li"><a href="inbox.html"> 
+                                <div class="user-photo" title="Sohel">
+                                    <img src="images/user/mouazzem.png" alt="slack bot">
+                                    <div class="user-status"></div>
+                                </div>
+                                Mouazzem
+                                    <div class="extra-options">
+                                    <span class="removeUser"><i class="fa-solid fa-xmark"></i></i></span>
+                                 </div>
+                            </a>
+                        </li>
+                        <li class="sub-li"><a href="inbox.html"> 
+                                <div class="user-photo" title="Sohel">
+                                    <img src="images/user/sajib.jpg" alt="slack bot">
+                                    <div class="user-status"></div>
+                                </div>
+                                sajib
+                                    <div class="extra-options">
+                                    <span class="removeUser"><i class="fa-solid fa-xmark"></i></i></span>
+                                 </div>
+                            </a>
+                        </li>
+                        <li class="sub-li"><a href="inbox.html"> 
+                                <div class="user-photo" title="Sohel">
+                                    <img src="images/user/slack-bot.png" alt="slack bot">
+                                    <div class="user-status"></div>
+                                </div>
+                                Salem Al Hamed
+                                    <div class="extra-options">
+                                    <span class="removeUser"><i class="fa-solid fa-xmark"></i></i></span>
+                                 </div>
+                            </a>
+                        </li>
+                            <li class="sub-li"><a href="inbox.html"> 
+                                <div class="user-photo" title="Sohel">
+                                    <img src="images/user/salman.jpg" alt="slack bot">
+                                    <div class="user-status"></div>
+                                </div>
+                                Salman
+                                    <div class="extra-options">
+                                    <span class="removeUser"><i class="fa-solid fa-xmark"></i></i></span>
+                                 </div>
+                            </a>
+                        </li>
+                        <li class="sub-li">
+                                <a href="#"> <span><i class="fa-solid fa-plus"></i></span>Add teammates</a>
+                            </li>
+                        </ul>
+                     </div>
+                </li>
+                </li>
+                <li class="app parent-li"><a href="#">
+                    <div class="sort-icon">
+                        <img class="add-app" src="images/icons/sort-right.png" alt="sort right icon">
+                        <img class="add-app" src="images/icons/sort-down.png" alt="sort right icon">
+                    </div>
+                     Apps
+                     <div class="extra-options">
+                        <span><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                        <span><i class="fa-solid fa-plus"></i></span>
+                     </div>
+                    </a>
+                    <div class="sidebar-sub-menu">
+                        <ul>  
+                            <li class="sub-li"><a href="#"> <span><i class="fa-solid fa-plus"></i></span>Add apps</a></li>
+                        </ul>
+                     </div>
+                </li>
+            </ul>
+           
+        </div>
+</aside>
+<!--Sidebar Section End-->
+<!--main Conent Start-->
+    <div id="main-content">
+        <div class="slack-connect-body">
+            <div class="title-bar">
+                <span class="bars-icon">
+                    <img src="images/icons/sidebar-icon.png" alt="Toggle">
+                </span>
+                <h4>Slack Connect</h4>
+                <button>View Invetation</button>
+            </div>
+            <div class="slack-banner">
+                <div class="banner-text">
+                    <h1>Work with people outside Vaid Tech in Slack</h1>
+                    <p>Use Slack Connect to collaborate securely with clients, vendors and partners.</p>
+                    <button>See how Slack Connect works</button>
+                </div>
+                <div class="banner-image">
+                    <img src="images/slack-banner.svg" alt="">
+                </div>
+            </div>
+    </div> 
+</div>
+<!--main Conent End-->
+<!--Mention and reaction Start-->
+<div id="mention-sidebar">
+    <div class="mention-header">
+        <div class="title">
+            <h3>Mentions & reactions</h3>
+        </div>
+        <div class="actions">
+           <ul>
+               <li><img src="images/icons/filter.png" alt="filer"></li>
+               <li><img src="images/icons/move.png" alt="move"></li>
+               <li class="mention-dismiss"><img src="images/icons/dismiss.png" alt="dismiss"></li>
+           </ul>
+        </div>
+    </div>
+    <div class="mention-body">
+        <div class="mention-item">
+            <div class="mention-owner">
+                <p><span>Mehedy </span>react to your message</p>
+            </div>
+            <div class="mention-user">
+                <div class="react-icon"><img src="images/icons/reaction.png" alt=""></div>
+                <div class="info">
+                    <div class="name"><h5>Sohel <span> May 29th at 12:07 PM  </span></h5></div>
+                    <p class="message">thanks vaia</p>
+                </div>
+            </div>
+            <div class="reaction-view">
+                <ul>
+                    <li><img src="images/icons/react-view.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mention-item">
+            <div class="mention-owner">
+                <p><span>Mehedy </span>react to your message</p>
+            </div>
+            <div class="mention-user">
+                <div class="react-icon"><img src="images/icons/reaction-2.png" alt=""></div>
+                <div class="info">
+                    <div class="name"><h5>Sohel <span> May 29th at 12:07 PM  </span></h5></div>
+                    <p class="message">tnx</p>
+                </div>
+            </div>
+            <div class="reaction-view">
+                <ul>
+                    <li><img src="images/icons/react-view.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mention-item">
+            <div class="mention-owner">
+                <p><span>Salman </span>react to your message</p>
+            </div>
+            <div class="mention-user">
+                <div class="react-icon"><img src="images/icons/reaction-3.png" alt=""></div>
+                <div class="info">
+                    <div class="name"><h5>Sohel <span> May 29th at 12:07 PM  </span></h5></div>
+                    <p class="message">vaia dashboard ar akta simple sidebar create korlam
+                        live demo: https://soheltanbir.github.io/Toggle-Sidebar/</p>
+                </div>
+            </div>
+            <div class="reaction-view">
+                <ul>
+                    <li><img src="images/icons/react-view.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mention-item">
+            <div class="mention-owner">
+                <p><span>Mehedy </span>react to your message</p>
+            </div>
+            <div class="mention-user">
+                <div class="react-icon"><img src="images/icons/reaction.png" alt=""></div>
+                <div class="info">
+                    <div class="name"><h5>Sohel <span> May 29th at 12:07 PM  </span></h5></div>
+                    <p class="message">thanks vaia</p>
+                </div>
+            </div>
+            <div class="reaction-view">
+                <ul>
+                    <li><img src="images/icons/react-view.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mention-item">
+            <div class="mention-owner">
+                <p><span>Mehedy </span>react to your message</p>
+            </div>
+            <div class="mention-user">
+                <div class="react-icon"><img src="images/icons/reaction.png" alt=""></div>
+                <div class="info">
+                    <div class="name"><h5>Sohel <span> May 29th at 12:07 PM  </span></h5></div>
+                    <p class="message">thanks vaia</p>
+                </div>
+            </div>
+            <div class="reaction-view">
+                <ul>
+                    <li><img src="images/icons/react-view.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mention-item">
+            <div class="mention-owner">
+                <p><span>Mehedy </span>react to your message</p>
+            </div>
+            <div class="mention-user">
+                <div class="react-icon"><img src="images/icons/reaction.png" alt=""></div>
+                <div class="info">
+                    <div class="name"><h5>Sohel <span> May 29th at 12:07 PM  </span></h5></div>
+                    <p class="message">thanks vaia</p>
+                </div>
+            </div>
+            <div class="reaction-view">
+                <ul>
+                    <li><img src="images/icons/react-view.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mention-item">
+            <div class="mention-owner">
+                <p><span>Mehedy </span>react to your message</p>
+            </div>
+            <div class="mention-user">
+                <div class="react-icon"><img src="images/icons/reaction.png" alt=""></div>
+                <div class="info">
+                    <div class="name"><h5>Sohel <span> May 29th at 12:07 PM  </span></h5></div>
+                    <p class="message">thanks vaia</p>
+                </div>
+            </div>
+            <div class="reaction-view">
+                <ul>
+                    <li><img src="images/icons/react-view.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mention-item">
+            <div class="mention-owner">
+                <p><span>Mehedy </span>react to your message</p>
+            </div>
+            <div class="mention-user">
+                <div class="react-icon"><img src="images/icons/reaction.png" alt=""></div>
+                <div class="info">
+                    <div class="name"><h5>Sohel <span> May 29th at 12:07 PM  </span></h5></div>
+                    <p class="message">thanks vaia</p>
+                </div>
+            </div>
+            <div class="reaction-view">
+                <ul>
+                    <li><img src="images/icons/react-view.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Mention and reaction End-->
+
+
+   </div>
+</main>
+<!--Main Section End-->
+
+
+
+
+
+
+
+
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slack | Drafts | Vaid Tech</title>
     <link rel="shortcut icon" href="images/logo/slack-logo-icon.png" type="image/x-icon">
     <!--google fonts-->
@@ -166,7 +715,7 @@
                     <span>1</span>
                     </a>
                 </li>
-                <li class="parent-li"><a href="slack-connect.html">
+                <li class="parent-li"><a href="#">
                     <img class="slack-connect" src="images/icons/slack-connect.png" alt="slack connect icon">
                     <!-- <span><i class="fa-regular fa-building"></i></span> -->
                     Slack Connect</a>
