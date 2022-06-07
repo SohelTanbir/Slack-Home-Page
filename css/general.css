@@ -15,8 +15,13 @@
     font-weight: 400;
     color: rgb(188,171,188);
 }
+.general-message.inbox-message{
+    padding: 0;
+}
 .general-message .user-replies{
     padding:.5rem;
+    border-top: .1rem solid #dddddd;
+    margin: 1.5rem 0;
 }
 .general-users{
     position: relative;
@@ -25,9 +30,25 @@
     padding: .3rem;
     border-radius:.3rem;
 }
+.general-message .post-date {
+    position: sticky;
+    top: 8%;
+    max-width: 25%;
+    width: fit-content;
+    margin: auto;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #1D1C1D;
+    background: #fff;
+    padding: .5rem 1.5rem;
+    border-radius: 3rem;
+    text-align: center;
+    border: .1rem solid #dddddd;
+    z-index: 1919;
+    margin-top: -2rem;
+}
 .general-message .user-replies:hover.user-replies .thread-action{
     display: block!important;
-    background: orange!important;
 }
 .general-message .user-replies:hover{
     background: #F8F8F8;
@@ -37,8 +58,8 @@
     justify-content:space-around;
     align-items: center;
 }
-.general-message .message-sender{
-    margin: 1rem;
+.general-message .message-sender {
+    margin: 2rem 1rem 1rem;
 }
 .general-users .photos img{
     width: 2rem;
@@ -108,6 +129,7 @@
     width: 100%;
     height:25rem;
     border-radius: 1rem;
+    cursor:zoom-in;
 }
 .user-share-photo .photo-item:hover .photo-overlay{
     display: block;
