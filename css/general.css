@@ -15,6 +15,9 @@
     font-weight: 400;
     color: rgb(188,171,188);
 }
+.general-message .user-replies{
+    padding:.5rem;
+}
 .general-users{
     position: relative;
     width: 10rem;
@@ -55,16 +58,23 @@
     font-size: 1.3rem;
     margin-left: .5rem;
 }
+.general-message .post-title{
+    font-size: 1.5rem!important;
+    color: #000!important;
+    font-weight: 600;
+}
 .user-share-photo {
     width: 95rem;
     margin: auto;
 }
 .user-share-photo .row{
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 .user-share-photo .photo-item{
     position: relative;
-    width: 24.2%;
+    width: 24%;
+    margin-right: 1%;
     margin-bottom: .5rem;
     cursor: pointer;
 }
@@ -95,8 +105,45 @@
     left: 50%;
 }
 .user-share-photo .photo-item img{
+    width: 100%;
+    height:25rem;
     border-radius: 1rem;
 }
 .user-share-photo .photo-item:hover .photo-overlay{
     display: block;
+}
+.reactions{
+    padding: .5rem;
+}
+.share-post{
+    border-left:.4rem solid #dddddd;
+    padding-left: 1rem;
+}
+.share-post .site-domain{
+    display: flex;
+    align-items: center;
+}
+.share-post .site-domain img{
+    width: 2rem;
+    height:1.5rem;
+}
+.post-sub-title{
+    width: 40%;
+    color: #1164A3;
+}
+.post-description{
+    display: flex;
+}
+.post-description p{
+    width: 60%;
+    font-size: 1.5rem;
+    padding-bottom:1rem ;
+}
+.post-description img{
+    width: 15rem;
+    margin-top: -5rem;
+    padding:0 1rem;
+}
+.post-description.with-photo p{
+    width: 40%;
 }
