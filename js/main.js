@@ -164,6 +164,16 @@ $(".workspace .thread-replies").on("mouseover", function(){
 })
 $(".workspace .thread-replies").on("mouseout", function(){
    $(".workspace .last-replay").text("Last replay today at 3:23 PM");
+});
+// handle thread view dismiss
+$(".thread-dismiss ").click(function(){
+    $(".view-thread").hide();
+})
+$(".all-replies").click(function(){
+    $(".view-thread").show();
+})
+$(".workspace .thread-replies").click(function(){
+    $(".view-thread").show();
 })
 
 

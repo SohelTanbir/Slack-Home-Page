@@ -22,6 +22,7 @@
     background: #fff;
     border: .1rem solid #dddddd;
     border-radius: .5rem;
+    cursor: pointer;
 }
 
 .workspace .user-lists{
@@ -64,6 +65,7 @@
 .workspace .user-lists .last-replay{
     font-size: 1.3rem;
     color:#6e6c6c ;
+    cursor: pointer;
 }
 .view-replies-icon{
     padding-right: .5rem;
@@ -75,4 +77,34 @@
 }
 .workspace .thread-replies:hover .view-replies-icon i{
     visibility: visible;
+}
+.view-thread{
+    width:29%;
+    height: 100vh;
+    display: block;
+    background: #fff;
+    border-left: .1rem solid #dddddd;
+}
+.view-thread .thread-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: .1rem solid #dddddd;
+    padding:.75rem 1rem;
+}
+.thread-dismiss{
+    cursor: pointer;
+}
+.thread-header .user-title {
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+.thread-header .user-title span{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #494949;
+    margin-left: .5rem;
+}
+.thread-header .user-title span i{
+    font-size: 1.2rem;
 }
