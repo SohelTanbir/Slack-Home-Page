@@ -158,7 +158,13 @@ $(".mention-dismiss").click(function(){
 $(".mentionRection").click(function(){
     $("#mention-sidebar").show();
 })
-
+// handle text replace on workspace page
+$(".workspace .thread-replies").on("mouseover", function(){
+   $(".workspace .last-replay").text("View thread");
+})
+$(".workspace .thread-replies").on("mouseout", function(){
+   $(".workspace .last-replay").text("Last replay today at 3:23 PM");
+})
 
 
 
