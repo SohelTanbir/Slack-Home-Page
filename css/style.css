@@ -265,9 +265,8 @@ ul{
 .sidebar-title .popup-info{
     display: none;
     position: absolute;
-    top:93%;
+    top:100%;
     left:6%;
-    box-shadow: none;
 }
 .sidebar-title .popup-info .company-info{
     display: flex;
@@ -378,12 +377,14 @@ ul{
     color:#fafafa;
 }
 .sidebar-menu{
+    position: relative;
     height: 100vh;
     padding-bottom: 5rem;
     background: #3F0E40;
     overflow: auto;
     padding: .8rem 0 5rem;
 }
+
 ul.sidebar-top-item li{
     position: relative;
 }
@@ -424,6 +425,7 @@ ul.sidebar-top-item li a span{
     margin-right: .9rem;
 }
 ul.sidebar-top-item li.more{
+    position: relative;
     margin-bottom: 1rem;
     margin-left: .8rem;
 }
@@ -445,6 +447,52 @@ ul.sidebar-top-item li.direct-msg a:hover{
 }
 ul.sidebar-top-item li.app a:hover{
     background: transparent;
+}
+.more-popup-option {
+    position: absolute;
+    left: 8%;
+    z-index: 99999999999;
+    top: 40%;
+    display: none;
+}
+.more-popup-option .popup-info {
+    box-shadow: 0 0 .1rem #ddd;
+}
+.more-popup-option .popup-info ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+.more-popup-option .popup-info ul li p{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #646363;
+    padding: .5rem 1rem;
+}
+.more-popup-option .popup-info ul li:first-child{
+    border-bottom: .1rem solid #dddddd;
+    padding: 1rem;
+}
+.more-popup-option .popup-info ul li:last-child{
+    padding: 1rem;
+    border-top: .1rem solid #dddddd;
+}
+.more-popup-option .popup-info ul li:last-child p span{
+    color: #1264A3;
+    padding-left: .3rem;
+}
+.shortcut-key {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #646363;
+    padding-right:2rem;
+}
+.more-popup-option .popup-info ul li p img{
+    margin-right: .5rem;
 }
 /* sidebar sub item menu */
 .sidebar-sub-menu{
@@ -742,7 +790,7 @@ span.bars-icon{
 .draft-item span{
     font-size: 1.2rem!important;
     color: #aaaaaa;
-    padding-left: 13rem;
+    padding-left: 8rem;
 }
 /*
 -----------------------------------------------------

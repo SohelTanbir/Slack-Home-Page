@@ -1,0 +1,102 @@
+
+.user-title i.fa-hashtag{
+    font-size: 1.6rem;
+    color: #000;
+    font-weight: 900;
+}
+.user-title  span i.fa-angle-down{
+    font-size: 1.2rem;
+    color: #6e6c6c;
+    font-weight: 900;
+    margin-right: .5rem;
+}
+.user-title .subtitle{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: rgb(188,171,188);
+}
+.general-users{
+    position: relative;
+    width: 10rem;
+    border: .1rem solid #dddddd;
+    padding: .3rem;
+    border-radius:.3rem;
+}
+.general-message .user-replies:hover.user-replies .thread-action{
+    display: block!important;
+    background: orange!important;
+}
+.general-message .user-replies:hover{
+    background: #F8F8F8;
+}
+.general-users .photos{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.general-message .message-sender{
+    margin: 1rem;
+}
+.general-users .photos img{
+    width: 2rem;
+    border-radius: .4rem;
+}
+.general-users .photos .user-counts{
+    font-size: 1.4rem;
+}
+.general-message .sender-info p{
+    display: flex;
+    align-items: center;
+    padding:.3rem 0;
+    font-size: 1.3rem;
+    color: #868686;;
+}
+.general-message .sender-info p i{
+    font-size: 1.3rem;
+    margin-left: .5rem;
+}
+.user-share-photo {
+    width: 95rem;
+    margin: auto;
+}
+.user-share-photo .row{
+    flex-wrap: wrap;
+}
+.user-share-photo .photo-item{
+    position: relative;
+    width: 24.2%;
+    margin-bottom: .5rem;
+    cursor: pointer;
+}
+.photo-overlay{
+    display: none;
+    background: #fff;
+    padding: .5rem;
+    border-radius: .8rem;
+}
+.photo-overlay ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.photo-overlay ul li{
+    padding:.3rem .8rem;
+}
+.photo-overlay ul li i{
+    font-size: 1.6rem;
+    color: #a5a2a2;
+}
+.photo-overlay ul li:hover{
+    background: #F6F6F6;
+}
+.user-share-photo .photo-item .photo-overlay{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+}
+.user-share-photo .photo-item img{
+    border-radius: 1rem;
+}
+.user-share-photo .photo-item:hover .photo-overlay{
+    display: block;
+}

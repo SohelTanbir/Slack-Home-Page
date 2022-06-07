@@ -98,6 +98,10 @@
     background: #FFFFFF;
     border: .1rem solid #dddddd;
 }
+.togerther-option:hover{
+    background: #F8F8F8;
+    cursor: pointer;
+}
 .togerther-option .icon{
     width: 3.5rem;
     height: 3.5rem;

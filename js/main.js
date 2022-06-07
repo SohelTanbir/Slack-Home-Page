@@ -17,7 +17,11 @@ $(".parent-li").click(function (e){
 $(".sub-li").click(function (e){
     e.stopPropagation();
 });
-
+// toggle popup more option
+$("li.more").click(function(e){
+    $(".more-popup-option").toggle();
+    e.stopPropagation();
+})
     // remove user from direct msg list 
     $(".removeUser").click(function(){
         $(this.parentElement.parentElement.parentElement).hide();

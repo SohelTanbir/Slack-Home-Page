@@ -13,6 +13,8 @@
     <!--main stylesheet-->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/inbox.css">
+    <link rel="stylesheet" href="css/threads.css">
+    <link rel="stylesheet" href="css/general.css">
 </head>
 <body>
 <!--Header Section Start-->    
@@ -349,18 +351,106 @@
             <span class="bars-icon">
                 <img src="images/icons/sidebar-icon.png" alt="Toggle">
             </span>
-            <div class="user-photo">
-                <img src="images/user/salman.jpg" alt="user">
-                <div class="user-status"></div>
-            </div>
-            <h4 class="user-title">Salman <span><i class="fa-solid fa-angle-down"></i></span></h4>
+            <h4 class="user-title">
+                 <i class="fa-solid fa-hashtag"></i>
+                  general 
+                <span><i class="fa-solid fa-angle-down"></i></span>
+                <span class="subtitle">Company-wide announcements and work-based matters</span>
+            </h4>
            </div>
            
-        <div class="user-action">
-            <span title="Call Salman"><i class="fas fa-phone"></i></span>
+        <div class="user-action general-users">
+            <div class="photos">
+                <img src="images/user/salman.jpg" alt="salman">
+                <img src="images/user/sajib.jpg" alt="sajib">
+                <img src="images/user/mehedy.jpg" alt="mehedy">
+                <div class="user-counts"><span>10</span></div>
+            </div>
         </div>
        </div>
-       <div class="inbox-message"></div>
+       <div class="inbox-message general-message">
+        <div class="user-replies">
+             <div class="message-sender">
+                 <div class="photo">
+                     <img src="images/user/sajib.jpg" alt="message sender">
+                 </div>
+                 <div class="sender-info">
+                     <h4 class="sender-name">Sajib  <small>4 hours ago</small></h4>
+                     <p>5 files <span><i class="fa-solid fa-sort-down"></i></span></p>
+                 </div>
+                 <div class="thread-action">
+                     <div class="popup-info">
+                         <ul>
+                             <li><img src="images/icons/complete.png" alt="completed"></li>
+                             <li><img src="images/icons/eyes.png" alt="look"></li>
+                             <li><img src="images/icons/nicely-done.png" alt="done"></li>
+                             <li class="emoji"><img src="images/icons/emoji.png" alt="emoji"></li>
+                             <li><img src="images/icons/bookmark.png" alt="bookmark"></li>
+                             <li><img src="images/icons/more-action.png" alt="more action"></li>
+                         </ul>
+                     </div>
+                 </div>
+                  <div class="popup-info emoji-popup">
+                         <img src="images/icons/all emoji.png" alt="">
+                     </div>  
+             </div>
+             <div class="user-share-photo">
+                    <div class="row">
+                     <div class="photo-item">
+                         <img src="images/general/general-1.jpg" alt="general photo">
+                         <div class="photo-overlay">
+                            <ul>
+                                <li><i class="fa-solid fa-cloud-arrow-down"></i></li>
+                                <li><i class="fa-solid fa-share"></i></li>
+                                <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                            </ul>
+                         </div>
+                     </div>
+                     <div class="photo-item">
+                         <img src="images/general/general-2.jpg" alt="general photo">
+                            <div class="photo-overlay">
+                            <ul>
+                                <li><i class="fa-solid fa-cloud-arrow-down"></i></li>
+                                <li><i class="fa-solid fa-share"></i></li>
+                                <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                            </ul>
+                         </div>
+                     </div>
+                     <div class="photo-item">
+                         <img src="images/general/general-3.jpg" alt="general photo">
+                            <div class="photo-overlay">
+                            <ul>
+                                <li><i class="fa-solid fa-cloud-arrow-down"></i></li>
+                                <li><i class="fa-solid fa-share"></i></li>
+                                <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                            </ul>
+                         </div>
+                     </div>
+                     <div class="photo-item">
+                         <img src="images/general/general-4.jpg" alt="general photo">
+                            <div class="photo-overlay">
+                            <ul>
+                                <li><i class="fa-solid fa-cloud-arrow-down"></i></li>
+                                <li><i class="fa-solid fa-share"></i></li>
+                                <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                            </ul>
+                         </div>
+                     </div>
+                     <div class="photo-item">
+                         <img src="images/general/general-5.jpg" alt="general photo">
+                            <div class="photo-overlay">
+                            <ul>
+                                <li><i class="fa-solid fa-cloud-arrow-down"></i></li>
+                                <li><i class="fa-solid fa-share"></i></li>
+                                <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                            </ul>
+                         </div>
+                     </div>
+                    </div>
+             </div>
+        </div>
+
+       </div>
        <div class="inbox-footer">
         <div class="text-editor">
             <ul>
@@ -377,7 +467,7 @@
         </div>
             <div class="inbox-top">
                 <div class="message-box">
-                    <input class="textarea-message" name="message"  placeholder="Message Salman"></input>
+                    <input class="textarea-message" name="message"  placeholder="Message #general"></input>
                 </div>
             </div>
             <div class="inbox-bottom">
