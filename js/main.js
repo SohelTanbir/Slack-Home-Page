@@ -175,7 +175,14 @@ $(".all-replies").click(function(){
 $(".workspace .thread-replies").click(function(){
     $(".view-thread").show();
 })
-
+// handle create or browse channel
+$(".add-channel").click(function(e){
+   $(".channel-popup .popup-info").toggle();
+   e.stopPropagation();
+})
+$("#main-content").click(function(){
+   $(".channel-popup .popup-info").hide();
+})
 
 
 

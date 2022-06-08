@@ -792,6 +792,23 @@ span.bars-icon{
     color: #aaaaaa;
     padding-left: 14rem;
 }
+
+/*channel popup */
+.channel-popup .popup-info{
+    display: none;
+    position: absolute;
+    left: 25%;
+    padding: 1.5rem 2.15rem;
+    z-index: 222;
+    width: fit-content;
+    box-shadow: none;
+}
+.channel-popup .popup-info ul li{
+    font-size: 1.6rem;
+    color: #6e6e6e;
+}
+
+
 /*
 -----------------------------------------------------
 ---------- Responsive Style ---------------
