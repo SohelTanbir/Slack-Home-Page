@@ -1,0 +1,40 @@
+/*
+------------------------------------------------------------------
+------------- This styleseet only for personal page -----------
+------------------------------------------------------------------
+*/
+.personal-main{
+    width: 100%;
+}
+.personal-banner{
+    width: 100%;
+    background: #F8F8F8;
+    padding: 2rem;
+    margin-top: 4rem;
+    border-bottom: .1rem solid #dddddd;
+}
+.personal-banner h3{
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 1.33334;
+    margin-bottom: 1.2rem;
+    margin-right: 2.4rem;
+    color: #000000;
+}
+.personal-banner p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #1D1C1D;
+    margin-bottom: 2.4rem;
+}
+.personal-banner button{
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: 900;
+    border-radius: .5rem;
+    background: #007A5A;
+    padding: .8rem 1rem;
+    word-spacing: -.2rem;
+    margin-bottom: 1rem;
+}
