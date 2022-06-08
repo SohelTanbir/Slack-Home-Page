@@ -877,7 +877,8 @@ span.bars-icon{
 */
 #mention-sidebar{
     position: relative;
-    width: 29%;
+    max-width: 31rem;
+    width: 100%;
     display: none;
 }
 .mention-header{

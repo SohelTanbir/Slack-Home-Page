@@ -162,6 +162,7 @@ $(".mention-dismiss").click(function(){
 })
 $(".mentionRection").click(function(){
     $("#mention-sidebar").show();
+    console.log("mention");
 })
 // handle text replace on workspace page
 $(".workspace .thread-replies").on("mouseover", function(){
