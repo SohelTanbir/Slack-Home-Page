@@ -187,6 +187,10 @@ $(".add-channel").click(function(e){
 })
 $("#main-content").click(function(){
    $(".channel-popup .popup-info").hide();
+});
+// handle huddle show/hide
+$(".direct-msg ul li").click(function(){
+    $(".sidebar-huddle").show();
 })
 
 
