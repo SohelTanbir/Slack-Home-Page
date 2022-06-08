@@ -38,3 +38,39 @@
     word-spacing: -.2rem;
     margin-bottom: 1rem;
 }
+.personal-footer{
+    width: 96%;
+    margin: auto;
+    background: #F8F8F8;
+    padding: 2.5rem 1.5rem 1.5rem;
+    text-align: center;
+    margin-top: 18.5rem;
+    border-radius:1rem;
+    border: .1rem solid #dddddd;
+}
+.personal-footer h3{
+    margin-bottom: 1.2rem;
+}
+.personal-footer h3 i{
+    font-size: 1.5rem;
+}
+.personal-footer button{
+    border: none;
+    outline: none;
+    font-weight: 900;
+    border-radius: .5rem;
+    padding: .8rem 1rem;
+    word-spacing: -.2rem;
+    margin-bottom: 1rem;
+}
+.personal-footer button.details-btn{
+    color: #575757;
+    padding: .8rem 1.5rem;
+    background: #fff;
+    border: .1rem solid #dddddd;
+}
+.personal-footer button.join-channel-btn{
+    color: #fff;
+    background: #007A5A;
+    margin-left: 1rem;
+}
