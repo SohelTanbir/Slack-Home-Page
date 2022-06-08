@@ -35,13 +35,16 @@
     align-items: center;
     background-color: #E0EEE7;
 }
+.slack-banner .row{
+    flex-wrap: wrap;
+}
 .slack-banner .banner-text{
+    width: 50%;
     padding: 5.5rem 0 5.8rem 5.2rem;
 }
 .slack-banner .banner-text h1 {
     font-size: 3.2rem;
     font-weight: 600;
-    padding-right: 33%;
 }
 .slack-banner .banner-text p{
     font-size: 1.6rem;
@@ -76,6 +79,8 @@
     width: 80%;
 }
 .slack-together{
+    width: 100%;
+    height: 85vh;
     background: #F8F8F8;
     padding: 5.4rem 5rem 10rem;
 }
@@ -157,7 +162,7 @@
 */
 @media screen and (max-width:1200px){
     .slack-banner .banner-text h1 {
-        padding-right: 15%;
+        padding-right: 0%;
     }
     .slack-banner .banner-text p {
         padding: 1rem 12% 2rem 0;
