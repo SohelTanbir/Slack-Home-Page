@@ -3,8 +3,11 @@
 ------------- This styleseet only for personal page -----------
 ------------------------------------------------------------------
 */
-.personal-main{
+.personal-main {
     width: 100%;
+    height: 100vh;
+    padding-bottom: 10rem;
+    overflow: auto;
 }
 .personal-users{
     display: flex;
@@ -84,4 +87,19 @@
     color: #fff;
     background: #007A5A;
     margin-left: 1rem;
+}
+
+
+/*
+-----------------------------------------------------
+---------- customize scrollbar style ---------------
+-----------------------------------------------------
+*/
+.personal-main::-webkit-scrollbar{
+    width: .8rem;
+    background-color: transparent;
+}
+.personal-main::-webkit-scrollbar-thumb{
+    background-color:#967B96;
+    border-radius: 1rem;
 }

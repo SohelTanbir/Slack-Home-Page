@@ -150,16 +150,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 /*
 -----------------------------------------------------
 ---------- customize scrollbar style ---------------
@@ -172,4 +162,25 @@
 .view-thread .thread-body::-webkit-scrollbar-thumb{
     background-color:#967B96;
     border-radius: 1rem;
+}
+
+
+/*
+-----------------------------------------------------------
+------------------  Responsive Styles -----------------
+-----------------------------------------------------------
+*/
+
+@media screen and (max-width:992px){
+    .workspace .thread-replies {
+        max-width: 80%;
+    }
+    .general-message .post-date {
+        max-width: 50%;
+    }
+}
+@media screen and (max-width:768px){
+    .workspace .thread-replies {
+        max-width: 98%;
+    }
 }
