@@ -78,7 +78,7 @@ ul{
 .search-box {
     display: flex;
     align-items: center;
-    width:78.9rem;
+    width:75%;
     margin-left:19.5rem;
 }
 .input-box{
@@ -854,6 +854,12 @@ span.bars-icon{
     }
     span.bars-icon{
         display: block;
+    }
+    .search-box {
+        margin-left: .5%;
+    }
+    .unread-message {
+        left: 52%;
     }
 }
 @media screen and (min-width:1992px){
