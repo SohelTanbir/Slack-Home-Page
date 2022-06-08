@@ -805,8 +805,30 @@ span.bars-icon{
     font-size: 1.6rem;
     color: #6e6e6e;
 }
-
-
+.sidebar-huddle{
+    position: absolute;
+    top: 80%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #3F0E40;
+    padding: .3rem 1rem;
+    border-top: .1rem solid #423f42;
+}
+.sidebar-huddle .huddle-title h4{
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #b1a3b1;
+}
+.sidebar-huddle .huddle-title h4 img{
+    width: 3rem;
+    height: 2.5rem;
+    margin-right: 1rem;
+}
 /*
 -----------------------------------------------------
 ---------- Responsive Style ---------------
