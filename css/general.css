@@ -23,12 +23,13 @@
     border-top: .1rem solid #dddddd;
     margin: 1.5rem 0;
 }
-.general-users{
+.general-users {
     position: relative;
-    width: 10rem;
+    max-width: 10rem;
+    width: fit-content;
     border: .1rem solid #dddddd;
     padding: .3rem;
-    border-radius:.3rem;
+    border-radius: .3rem;
 }
 .general-message .post-date {
     position: sticky;
@@ -64,9 +65,11 @@
 .general-users .photos img{
     width: 2rem;
     border-radius: .4rem;
+    margin-right: .2rem;
 }
 .general-users .photos .user-counts{
     font-size: 1.4rem;
+    margin: 0 .5rem;
 }
 .general-message .sender-info p{
     display: flex;

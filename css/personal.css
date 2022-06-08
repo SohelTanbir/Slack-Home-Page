@@ -6,6 +6,17 @@
 .personal-main{
     width: 100%;
 }
+.personal-users{
+    display: flex;
+    width: fit-content;
+}
+.personal-users li{
+    width: 2.2rem;
+    height: 2.3rem;
+    background: #DDDDDD;
+    margin-right: .2rem;
+    border-radius: .3rem;
+}
 .personal-banner{
     width: 100%;
     background: #F8F8F8;
