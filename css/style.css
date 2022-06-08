@@ -583,6 +583,9 @@ ul.sidebar-top-item li.app a:hover{
 .sort-icon img:last-child{
     display: none;
 }
+#main-content-wrapper {
+    position: relative;
+}
 #main-content-wrapper .row{
     align-items: flex-start;
 }
@@ -844,7 +847,6 @@ span.bars-icon{
     #sidebar-section {
        visibility: hidden;
         position: absolute;
-        top: 7%;
         left: -100%;
         width: 27%;
         z-index: 1;
@@ -862,7 +864,7 @@ span.bars-icon{
         left: 52%;
     }
 }
-@media screen and (min-width:1992px){
+@media screen and (min-width:1392px){
     #main-content {
         width: 100%;
     }
